@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Header(props) {
     const [ showMediaIcons, SetshowMediaIcons ]= useState(false);
-    const showNav = props.showNav;
+    const showNav = props.showNav??true;
   return (
     <header>
 
