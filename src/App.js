@@ -30,7 +30,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<Aboutus/>} />
         <Route path="/services" element={<Services/>}/>

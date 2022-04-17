@@ -5,7 +5,6 @@ import "../Styles/global.css";
 export default function OurTeam() {
   return (
     <>
-      <>
         <Header />
         <div>
           <section className="mt-15 mb-15">
@@ -159,7 +158,6 @@ export default function OurTeam() {
       </section>
     </div>
   
-  </>
   </>
 
  )
