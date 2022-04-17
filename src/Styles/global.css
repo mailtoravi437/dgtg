@@ -642,6 +642,29 @@ b
     color: #171F33;
 }
 
+.whats-app {
+    position: fixed;
+    background-color: green;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    right: 15px;
+}
+
+.whats-app i
+{
+    background: none;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
 @media (max-width: 375px) {
     .menu
     {
@@ -659,7 +682,7 @@ b
     .menu-mobile-view
     {
         top: 75px;
-        left: 120%;
+        /* left: 120%; */
         display: block;
         padding: 100px 0px;
         text-align: center;

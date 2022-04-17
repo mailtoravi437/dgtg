@@ -42,7 +42,7 @@ export default function Header() {
                 </div>
                 <div className="hamberger-menu">
                         <a href='#' onclick={() => SetshowMediaIcons(!showMediaIcons)}>
-                        <GiHamburgerMenu />
+                            <GiHamburgerMenu />
                         </a>
                     </div>
             </div>

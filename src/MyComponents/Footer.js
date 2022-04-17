@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FaWhatsapp } from "react-icons/gi";
 
 export default function Footer() {
   return (
@@ -49,6 +50,7 @@ export default function Footer() {
                 <a href="#"><i className="fab fa-twitter" /></a>
                 <a href="#"><i className="fab fa-facebook-f" /></a>
                 <a href="#"><i className="fab fa-linkedin-in" /></a>
+                <a  class="whats-app" href="https://wa.me/+918240627029" target="_blank"><i class="fab fa-whatsapp"></i></a>
               </div>
             </div>
           </div>
