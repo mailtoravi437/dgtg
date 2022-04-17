@@ -32,9 +32,11 @@ a:visited
 
 .navbar
 {
-    padding-top: 0px;
+    padding-top: 15px;
     padding-bottom: 0 !important;
 }
+
+
 
 header ul
 {

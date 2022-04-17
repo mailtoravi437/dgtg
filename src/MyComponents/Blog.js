@@ -1,10 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import "../Styles/global.css";
+import BlogCard from './BlogCard';
 import Header from './Header';
 
 
 export default function Blog() {
+    const [blogs, setBlogs] = useState([]);
+    const [loaded, setLoaded] = useState(false);
+    useEffect(() => {
+        const headers = {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ab2eb18c7b36c02c1959eed0dfff654a45ab64daf6d7740a96d9c3bbf863f55c66cf48c6e978445f7f2cc0cb3c0119da3cf1ab4f05b7379659b4ea9b369cad7dba3933bbe900c97353c32ed9a03023ab8d1851f01a6331f424d8efeeef06d673352cc1ff0956fc7fd14f96b99cb46fa0d5ce8ae863422a0e417d6f246060874d',
+        }
+        async function fetchBlogs() {
+            const response = await fetch(process.env.REACT_APP_API_BASE_URL + '/api/blogs?populate=*', { headers });
+            const data = await response.json();
+            setBlogs(data.data);
+            setLoaded(true);
+        }
+        fetchBlogs();
+    }, []);
+    blogs.forEach(ele => {
+        console.log(ele);
+    })
     return (
         <>
             <Header />
@@ -39,83 +58,12 @@ export default function Blog() {
             <section>
                 <div className="container mt-15 mb-15">
                     <div className="row mt-15">
-                        <div className="col-4">
-                            <div className="post-img">
-                                <img src="images/blogs/blog1.png" />
-                            </div>
-                            <div className="post-deatails mt-4">
-                                <Link to='/blog-details' >
-                                    <p style={{ color: '#171F33' }}>4 Crucial Financial Metrics That Every Startup Must Address</p></Link>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div className="post-img">
-                                <img src="images/blogs/blog2.png" />
-                            </div>
-                            <div className="post-deatails mt-4">
-                                <p style={{ color: '#171F33' }}>Top 10 Android Apps You Must Download In 2019</p>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div className="post-img">
-                                <img src="images/blogs/blog3.png" />
-                            </div>
-                            <div className="post-deatails mt-4">
-                                <p style={{ color: '#171F33' }}>8 Best Practices for Email Marketing in 2019</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mt-15">
-                        <div className="col-4">
-                            <div className="post-img">
-                                <img src="images/blogs/blog4.png" />
-                            </div>
-                            <div className="post-deatails mt-4">
-                                <p style={{ color: '#171F33' }}>4 Crucial Financial Metrics That Every Startup Must Address</p>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div className="post-img">
-                                <img src="images/blogs/blog5.png" />
-                            </div>
-                            <div className="post-deatails mt-4">
-                                <p style={{ color: '#171F33' }}>Top 10 Android Apps You Must Download In 2019</p>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div className="post-img">
-                                <img src="images/blogs/blog6.png" />
-                            </div>
-                            <div className="post-deatails mt-4">
-                                <p style={{ color: '#171F33' }}>8 Best Practices for Email Marketing in 2019</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mt-15">
-                        <div className="col-4">
-                            <div className="post-img">
-                                <img src="images/blogs/blog7.png" />
-                            </div>
-                            <div className="post-deatails mt-4">
-                                <p style={{ color: '#171F33' }}>4 Crucial Financial Metrics That Every Startup Must Address</p>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div className="post-img">
-                                <img src="images/blogs/blog8.png" />
-                            </div>
-                            <div className="post-deatails mt-4">
-                                <p style={{ color: '#171F33' }}>Top 10 Android Apps You Must Download In 2019</p>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div className="post-img">
-                                <img src="images/blogs/blog9.png" />
-                            </div>
-                            <div className="post-deatails mt-4">
-                                <p style={{ color: '#171F33' }}>8 Best Practices for Email Marketing in 2019</p>
-                            </div>
-                        </div>
+                        { }
+                        {loaded ? blogs.map(blog => <BlogCard 
+                            title={blog.attributes.title}
+                            thumbnail={blog.attributes.thumbnail.data.attributes.url}
+                            slug={blog.attributes.slug} 
+                            />) : 'not loaded'}
                     </div>
                 </div>
             </section>
