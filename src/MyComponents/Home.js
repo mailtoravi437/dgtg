@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
+import { Link } from 'react-router-dom'
 
 
 export default function Home() {
@@ -88,7 +89,7 @@ export default function Home() {
               </div>
               <div className="col-sm-12 col-md-6 col-lg-6">
                 <div className="contactus d-flex justify-content-end align-items-center">
-                  <h4 style={{ color: '#FFFFFF' }}>Contact us<i className="fal fa-long-arrow-right" /></h4>
+                <Link to="/contactus" ><h4 style={{ color: '#FFFFFF' }}>Contact us<i className="fal fa-long-arrow-right" /></h4></Link>
                 </div>
               </div>
             </div>
