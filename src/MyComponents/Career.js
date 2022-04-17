@@ -7,7 +7,7 @@ import Footer from './Footer';
 export default function Career() {
   return (
     <>
-    <Header/>
+    <Header showNav={false}/>
     <section>
     <div className="container mb-15">
         <div className="row">

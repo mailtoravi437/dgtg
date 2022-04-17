@@ -532,6 +532,8 @@ footer{
 .search-txt input
 {
     border: none;
+    width: 40rem;
+    height: 3.8rem;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -540,7 +542,9 @@ footer{
     color: rgba(99, 102, 111, 0.6);
     padding-left: 25px;
 }
-
+textarea:focus, input:focus{
+    outline: none;
+}
 .search-btn a i
 {
     padding-right: 25px;
@@ -760,6 +764,11 @@ b
         padding: 1rem !important;
     } */
 
+    .home2 p, .home3 p, .home6 p, .service-header p, .latest-post p, .post-deatails p
+    {
+        font-size: 18px;
+    }
+    
     .home1 h2, .home6 h2, .latest-post h2
     {
         font-size: 32px;
@@ -775,6 +784,11 @@ b
         width: 100%;
         font-size: 24px;
     line-height: 29px;
+    }
+
+    .home5, .home2, .home3
+    {
+        padding: 0rem !important;
     }
 
     .letsgo
@@ -825,6 +839,11 @@ b
     .message input
     {
         margin-top: 20px;
+    }
+
+    .search-txt input
+    {
+        width: 19rem;
     }
 
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../Styles/global.css";
+import { Link } from 'react-router-dom'
 
 export default function Services() {
   return (
@@ -103,7 +104,7 @@ export default function Services() {
         </div>
         <div className="col-sm-12 col-md-6 col-lg-6">
           <div className="contactus d-flex justify-content-end align-items-center">
-            <h4>Contact us<i className="fal fa-long-arrow-right" style={{color: '#AC2027'}} /></h4>
+          <Link to="/contactus" ><h4>Contact us<i className="fal fa-long-arrow-right" style={{color: '#AC2027'}} /></h4></Link>
           </div>
         </div> 
       </div>
