@@ -39,7 +39,7 @@ export default function Blog() {
     <section>
         <div class="container mt-15 mb-15">
             <div class="row mt-15">
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="post-img">
                         <img src="images/blogs/blog1.png" />
                     </div>
@@ -47,7 +47,7 @@ export default function Blog() {
                         <p style="color: #171F33;">4 Crucial Financial Metrics That Every Startup Must Address</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="post-img">
                         <img src="images/blogs/blog2.png" />
                     </div>
@@ -55,7 +55,7 @@ export default function Blog() {
                         <p style="color: #171F33;">Top 10 Android Apps You Must Download In 2019</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="post-img">
                         <img src="images/blogs/blog3.png" />
                     </div>
@@ -66,7 +66,7 @@ export default function Blog() {
             </div>
 
             <div class="row mt-15">
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="post-img">
                         <img src="images/blogs/blog4.png" />
                     </div>
@@ -74,7 +74,7 @@ export default function Blog() {
                         <p style="color: #171F33;">4 Crucial Financial Metrics That Every Startup Must Address</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="post-img">
                         <img src="images/blogs/blog5.png" />
                     </div>
@@ -82,7 +82,7 @@ export default function Blog() {
                         <p style="color: #171F33;">Top 10 Android Apps You Must Download In 2019</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="post-img">
                         <img src="images/blogs/blog6.png" />
                     </div>
@@ -93,7 +93,7 @@ export default function Blog() {
             </div>
 
             <div class="row mt-15">
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="post-img">
                         <img src="images/blogs/blog7.png" />
                     </div>
@@ -101,7 +101,7 @@ export default function Blog() {
                         <p style="color: #171F33;">4 Crucial Financial Metrics That Every Startup Must Address</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="post-img">
                         <img src="images/blogs/blog8.png" />
                     </div>
@@ -109,7 +109,7 @@ export default function Blog() {
                         <p style="color: #171F33;">Top 10 Android Apps You Must Download In 2019</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="post-img">
                         <img src="images/blogs/blog9.png"/>
                     </div>

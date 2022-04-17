@@ -25,7 +25,7 @@ export default function OurWork() {
   <section>
     <div className="container mb-15">
       <div className="row">
-        <div className="col">
+        <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#modal"><img src="images/ourwork/khatabook.png" width="220px" height="58px" /></a>
           </div>
@@ -50,61 +50,61 @@ export default function OurWork() {
             </div>
           </div>
         </div>
-        <div className="col">
+        <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#"><img src="images/ourwork/housejoy.png" width="220px" height="112px" /></a>
           </div>
         </div>
-        <div className="col">
+        <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#"><img src="images/ourwork/reliance.png" width="220px" height="63px" /></a>
           </div>
         </div>
       </div>
       <div className="row mt-5">
-        <div className="col">
+        <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#"><img src="images/ourwork/swiggy.png" width="220px" height="66px" /></a>
           </div>
         </div>
-        <div className="col">
+        <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#"><img src="images/ourwork/mahindra.png" width="220px" height="124px" /></a>
           </div>
         </div>
-        <div className="col">
+        <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#"><img src="images/ourwork/ing.png" width="220px" height="55px" /></a>
           </div>
         </div>
       </div>
       <div className="row mt-5">
-        <div className="col">
+        <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#"><img src="images/ourwork/banco.png" width="220px" height="122px" /></a>
           </div>
         </div>
-        <div className="col">
+        <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#"><img src="images/ourwork/zivame.png" width="220px" height="58px" /></a>
           </div>
         </div>
-        <div className="col">
+        <div className="col-sm-12 col-md-4 col-lg-4">
         </div>
       </div>
     </div>
   </section>
-  <section style={{background: '#F9FAFD'}} className="p-4">
-    <div className="container">
+  <section style={{background: '#F9FAFD'}}>
+    <div className="container p-5">
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-sm-12 col-md-4 col-lg-4-sm-12 col-sm-12 col-md-4 col-lg-4-md-6 col-sm-12 col-md-4 col-lg-4-lg-6">
           <div className="letsgo d-flex">
             <img src="images/services/letsgo.png" height="80vh" width="80vh" />
             <h2>Let's get started working together.</h2>
           </div>
         </div>
-        <div className="col-sm-6 d-flex justify-content-end align-items-center">
-          <div className="contactus">
+        <div className="col-sm-12 col-md-4 col-lg-4-sm-12 col-sm-12 col-md-4 col-lg-4-md-6 col-sm-12 col-md-4 col-lg-4-lg-6">
+          <div className="contactus d-flex justify-content-end align-items-center">
             <h4>Contact us<i className="fal fa-long-arrow-right" style={{color: '#AC2027'}} /></h4>
           </div>
         </div> 

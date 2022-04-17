@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header';
 import "../Styles/global.css";
+import Footer from './Footer';
 
 
 export default function ContactUs() {
@@ -10,7 +11,7 @@ export default function ContactUs() {
     <section>
   <div className="container mt-5">
     <div className="row">
-      <div className="col-6">
+      <div className="col-sm-12 col-md-6 col-lg-6">
         <div className="place d-flex">
           <img src="images/career/banglore.png" />
           <div className="place-details">
@@ -42,7 +43,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <div className="col-6" style={{background: '#192238'}}>
+      <div className="col-sm-12 col-md-6 col-lg-6" style={{background: '#192238'}}>
         <i className="fal fa-long-arrow-left" style={{color: '#ffffff'}} />
         <div className="career">
           <h2 style={{color: '#ffffff'}}>Contact us</h2>
@@ -65,6 +66,7 @@ export default function ContactUs() {
   </div>
 </section>
 
+<Footer />
     </>
   )
 }

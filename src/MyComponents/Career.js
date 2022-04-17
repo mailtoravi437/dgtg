@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header';
 import "../Styles/global.css";
+import Footer from './Footer';
 
 
 export default function Career() {
@@ -10,10 +11,10 @@ export default function Career() {
     <section>
     <div className="container mb-15">
         <div className="row">
-        <div className="col-6">
+        <div className="col-sm-12 col-md-6 col-lg-6">
             <img src="images/career.png" />
         </div>
-        <div className="col-6">
+        <div className="col-sm-12 col-md-6 col-lg-6">
             <i className="fal fa-long-arrow-left" />
             <div className="career">
             <h2>Career</h2>
@@ -40,7 +41,7 @@ export default function Career() {
         </div>
     </div>
 </section>
-
+<Footer />
     </>
   )
 }

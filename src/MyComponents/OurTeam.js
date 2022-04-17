@@ -1,25 +1,24 @@
-import React from 'react'
-import Header from './Header'
-import '../Styles/global.css'
+import React from "react";
+import Header from './Header';
+import "../Styles/global.css";
 
 export default function OurTeam() {
-  return (<h1>Our Team</h1>);
   return (
     <>
-  <div>
-    <Header/>
-    <div>
-      <section className="mt-15 mb-15">
-        <div className="container">
-          <div className="service_header">
-            <h1>Our <span style={{color: '#AC2027'}}>Team</span></h1>
-          </div>
-        </div>        
+      <>
+        <Header />
+        <div>
+          <section className="mt-15 mb-15">
+            <div className="container">
+              <div className="service-header">
+                <h1>Our <span style={{ color: '#AC2027'}}>Team</span></h1>
+            </div>
+        </div>
       </section>
       <section>
         <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/biswa.png" />
@@ -30,7 +29,7 @@ export default function OurTeam() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/sanuj.png" />
@@ -41,7 +40,7 @@ export default function OurTeam() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/shobhit.png" />
@@ -52,7 +51,7 @@ export default function OurTeam() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/prasad.png" />
@@ -65,7 +64,7 @@ export default function OurTeam() {
             </div>
           </div>
           <div className="row mt-15">
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/garima.png" />
@@ -76,7 +75,7 @@ export default function OurTeam() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/snigdharani.png" />
@@ -87,7 +86,7 @@ export default function OurTeam() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/abdul.png" />
@@ -98,7 +97,7 @@ export default function OurTeam() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/meghna.png" />
@@ -111,7 +110,7 @@ export default function OurTeam() {
             </div>
           </div>
           <div className="row mt-15">
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/deepak.png" />
@@ -122,7 +121,7 @@ export default function OurTeam() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/akhil.png" />
@@ -133,7 +132,7 @@ export default function OurTeam() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/vijal.png" />
@@ -144,7 +143,7 @@ export default function OurTeam() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="team">
                 <div className="team-img">
                   <img src="images/ourteam/rachna.png" />
@@ -160,7 +159,7 @@ export default function OurTeam() {
       </section>
     </div>
   
-  </div>
+  </>
   </>
 
  )

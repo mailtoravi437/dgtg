@@ -10,17 +10,17 @@ export default function Services() {
       <div>
   <section className="mt-15 mb-15">
     <div className="container">
-      <div className="service_header">
+      <div className="service-header">
         <h1>Services</h1>
-        <p>We're a dynamic internet marketing agency that gives you the trust and confidence that you need to grow your company.</p>
+        <p>We're a dynamic internet <b>marketing agency</b> that gives you the trust and confidence that you need to grow your company.</p>
       </div>
     </div>        
   </section>
   <section className="mt-15 mb-15">
     <div className="container">
       <div className="row">
-        <div className="col-sm-6">
-          <div className="box p-5">
+        <div className="col-sm-12 col-md-6 col-lg-6">
+          <div className="box p-5 mt-15">
             <div className="box-icon">
               <img src="images/services/performance.png" />
             </div>
@@ -30,8 +30,8 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <div className="col-sm-6">
-          <div className="box p-5">
+        <div className="col-sm-12 col-md-6 col-lg-6">
+          <div className="box p-5 mt-15">
             <div className="box-icon">
               <img src="images/services/seo.png" />
             </div>
@@ -43,7 +43,7 @@ export default function Services() {
         </div>
       </div>
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-sm-12 col-md-6 col-lg-6">
           <div className="box p-5 mt-15">
             <div className="box-icon">
               <img src="images/services/social.png" />
@@ -54,7 +54,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <div className="col-sm-6">
+        <div className="col-sm-12 col-md-6 col-lg-6">
           <div className="box p-5 mt-15">
             <div className="box-icon">
               <img src="images/services/analystics.png" />
@@ -67,7 +67,7 @@ export default function Services() {
         </div>
       </div>
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-sm-12 col-md-6 col-lg-6">
           <div className="box p-5 mt-15">
             <div className="box-icon">
               <img src="images/services/influencer.png" />
@@ -78,7 +78,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <div className="col-sm-6">
+        <div className="col-sm-12 col-md-6 col-lg-6">
           <div className="box p-5 mt-15">
             <div className="box-icon">
               <img src="images/services/web.png" />
@@ -92,18 +92,18 @@ export default function Services() {
       </div>
     </div>
   </section>
-  <section style={{background: '#F9FAFD'}} className="p-4">
-    <div className="container">
+  <section style={{background: '#F9FAFD'}}>
+    <div className="container p-5">
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-sm-12 col-md-6 col-lg-6">
           <div className="letsgo d-flex">
             <img src="images/services/letsgo.png" height="80vh" width="80vh" />
             <h2>Let's get started working together.</h2>
           </div>
         </div>
-        <div className="col-sm-6">
-          <div className="contactus d-flex justify-content-center align-items-center" style={{float: 'right'}}>
-            <h4>Contact us</h4><i className="fal fa-long-arrow-right" style={{color: '#AC2027'}} />
+        <div className="col-sm-12 col-md-6 col-lg-6">
+          <div className="contactus d-flex justify-content-end align-items-center">
+            <h4>Contact us<i className="fal fa-long-arrow-right" style={{color: '#AC2027'}} /></h4>
           </div>
         </div> 
       </div>
