@@ -30,17 +30,14 @@ function App() {
   return (
     <Router>
       <Routes>
-        
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<Aboutus/>} />
         <Route path="/services" element={<Services/>}/>
-        <Route exact path="/team" elements={<OurTeam/>}/>
+        <Route path="/team" element={<OurTeam/>}/>
         <Route path="/career" element={<Career/>}/>
         <Route path="/ourwork" element={<OurWork/>}/>
-        <Route path="/blog" elements={<Blog/>}/>
-        <Route path="/contactus" elements={<ContactUs/>}/>
-        
-        
+        <Route path="/blog" element={<Blog/>}/>
+        <Route path="/contactus" element={<ContactUs/>}/>
       </Routes>
     </Router>
   );
