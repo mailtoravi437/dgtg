@@ -1,5 +1,6 @@
 import React from "react";
 import Header from './Header';
+import Footer from './Footer';
 import "../Styles/global.css";
 
 export default function OurTeam() {
@@ -156,6 +157,7 @@ export default function OurTeam() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   
   </>
