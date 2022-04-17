@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export default function Header() {
+export default function Header(props) {
     const [ showMediaIcons, SetshowMediaIcons ]= useState(false);
+    const showNav = props.showNav;
   return (
     <header>
 
@@ -12,6 +13,7 @@ export default function Header() {
                 <div className="logo">
                    <Link to="/"><img src="images/Home/dgtglogo.png" width="84px" height="46px" alt='' /></Link>
                 </div>
+                {showNav?
                 <div className={showMediaIcons ? "menu menu-mobile-view" : "menu"}>
                     <ul className="menu-list">
                         <li>
@@ -36,13 +38,14 @@ export default function Header() {
                             <Link to="/blog">Blogs</Link>
                         </li>
                         <li>
-                            <Link to="/contactus" className="active-bg" onclick="togglemenu();">Contact Us</Link>
+                            <Link to="/contactus" className="active-bg">Contact Us</Link>
                         </li>
                     </ul>
                 </div>
+                :""}
                 <div className="hamberger-menu">
                         <a href='#' onclick={() => SetshowMediaIcons(!showMediaIcons)}>
-                        <GiHamburgerMenu />
+                            <GiHamburgerMenu />
                         </a>
                     </div>
             </div>
