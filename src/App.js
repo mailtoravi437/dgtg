@@ -22,6 +22,7 @@ import Blog from './MyComponents/Blog';
 import './Styles/global.css'
 import ContactUs from './MyComponents/ContactUs';
 import OurTeam from './MyComponents/OurTeam';
+import BlogDetails from './MyComponents/BlogDetails';
 
 
 // library.add(fab);
@@ -36,8 +37,9 @@ function App() {
         <Route path="/team" element={<OurTeam/>}/>
         <Route path="/career" element={<Career/>}/>
         <Route path="/ourwork" element={<OurWork/>}/>
-        <Route path="/blog" element={<Blog/>}/>
         <Route path="/contactus" element={<ContactUs/>}/>
+        <Route path="/blog" element={<Blog/>}/>
+        <Route path="/blog-details" element={<BlogDetails/>}/>
       </Routes>
     </Router>
   );
