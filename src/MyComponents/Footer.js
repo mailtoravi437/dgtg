@@ -7,7 +7,7 @@ export default function Footer() {
       <section style={{ background: '#171F33' }}>
         <div className="container p-5">
           <div className="row">
-            <div className="col-m-12 col-md-6 col-lg-3">
+            <div className="col-sm-12 col-md-6 col-lg-3">
               <div className="footer-heading">
                 <h2>DGTG</h2>
               </div>
@@ -16,8 +16,8 @@ export default function Footer() {
                   and adding services in our portfolio.</p>
               </div>
             </div>
-            <div className="col-m-12 col-md-6 col-lg-3" />
-            <div className="col-2">
+            <div className="col-sm-12 col-md-6 col-lg-3" />
+            <div className="col-sm-6 col-md-6 col-lg-2">
               <div className="footer-heading">
                 <h3>Company</h3>
               </div>
@@ -30,7 +30,7 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-2">
+            <div className="col-sm-6 col-md-6 col-lg-2">
               <div className="footer-heading">
                 <h3>Legal</h3>
               </div>
@@ -41,7 +41,7 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-2">
+            <div className="col-sm-12 col-md-6 col-lg-2">
               <div className="footer-heading">
                 <h3>Social</h3>
               </div>
