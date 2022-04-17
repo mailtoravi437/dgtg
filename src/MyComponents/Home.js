@@ -11,7 +11,7 @@ export default function Home() {
         <section style={{ marginTop: '20vh' }}>
           <div className="container mb-15">
             <div className="row">
-              <div className="col-sm-12 col-md-6 col-lg-6">
+              <div className="col-sm-12 col-md-6 col-lg-6 order-md-1 order-2">
                 <div className="head">
                   <h1>Transform your <span style={{ color: '#AC2027' }}> Brand. </span></h1>
                   <h3>We're a <b>digital marketing agency</b> that helps businesses to get found, get talked about, and grow to the next level! </h3>
@@ -21,7 +21,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6 col-lg-6">
+              <div className="col-sm-12 col-md-6 col-lg-6 order-md-2 order-1">
                 <div className="head-img">
                   <img src="images/Home/home.png" />
                 </div>
@@ -32,14 +32,14 @@ export default function Home() {
         <section style={{ background: '#F9FAFD' }}>
           <div className="container">
             <div className="home">
-              <div className="row pt-5 mb-5">
+              <div className="row pt-5">
                 <div className="col-sm-12 col-md-6 col-lg-6">
                   <div className="home1">
                     <h2>Why <span style={{ color: '#AC2027' }}>Choose</span> us?</h2>
                   </div>
                 </div>
-                <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center p-5">
-                  <div className="home2">
+                <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
+                  <div className="home2 p-5">
                     <p>Choosing us, you would be choosing the best <b>Digital Marketing Agency in India.</b> We’re a creative agency and technology solutions partner, with over <b>200+</b> clients in the last 6 years. </p>
                   </div>
                 </div>
