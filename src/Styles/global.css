@@ -32,7 +32,7 @@ a:visited
 
 .navbar
 {
-    padding-top: 15px;
+    padding-top: 0px;
     padding-bottom: 0 !important;
 }
 
@@ -691,6 +691,11 @@ b
     top: 0;
     right: 0;
     z-index: 10;
+}
+
+.gallery-img{
+    width: 100%;
+    display: block;
 }
 
 @media (max-width: 500px) {

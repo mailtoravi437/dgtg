@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './Header';
 import "../Styles/global.css";
+import Footer from './Footer';
 
 
 export default function Aboutus() {
   return (
-    <div>
-      <Header />
-      <header>
+    <>
+      <Header showNav={true}/>
         <section className="mt-15 mb-15">
           <div className="container">
             <div id="features">
@@ -42,37 +42,35 @@ export default function Aboutus() {
             </div>
           </div>
         </section>
-
-
         <section className="mt-15 mb-15">
           <div className="container">
             <div className="row">
-              <div className="col">
-                <img src="images/aboutus/gallery1.png" width="715px" height="415px" />
+              <div className="col-md-7 col-sm-12">
+                <img className="gallery-img" src="images/aboutus/gallery1.png"/>
               </div>
-              <div className="col">
-                <img src="images/aboutus/gallery2.png" width="505px" height="415px" />
-              </div>
-            </div>
-
-            <div className="row mt-4">
-              <div className="col">
-                <img src="images/aboutus/gallery9.png" width="610px" height="415px" />
-                <div className="row mt-4">
-                  <div className="col">
-                    <img src="images/aboutus/gallery13.png" width="295px" height="415px" />
-                  </div>
-                  <div className="col">
-                    <img src="images/aboutus/gallery11.png" width="295px" height="415px" />
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <img src="images/aboutus/gallery6.png" width="610px" height="850px" />
+              <div className="col-md-5 col-sm-12">
+                <img className="gallery-img" src="images/aboutus/gallery2.png" />
               </div>
             </div>
 
-            <div className="row mt-4">
+            <div className="row">
+              <div className="col-md-6 col-sm-12">
+              <img className="gallery-img" src="images/aboutus/gallery9.png"/>
+              <div className="row">
+              <div className="col-md-6 col-sm-12">
+                    <img className="gallery-img" src="images/aboutus/gallery13.png"/>
+                  </div>
+                  <div className="col-md-6 col-sm-12">
+                    <img className="gallery-img" src="images/aboutus/gallery11.png"/>
+                  </div>
+              </div>
+              </div>
+              <div className="col-md-6 col-sm-12">
+                <img className="gallery-img" src="images/aboutus/gallery6.png" />
+              </div>
+            </div>
+
+            {/* <div className="row">
               <div className="col">
                 <img src="images/aboutus/gallery4.png" width="505px" height="415px" />
               </div>
@@ -83,9 +81,9 @@ export default function Aboutus() {
                 <img src="images/aboutus/gallery3.png" width="350px" height="198px" className="mb-3" />
                 <img src="images/aboutus/gallery8.png" width="350px" height="198px" />
               </div>
-            </div>
+            </div> */}
 
-            <div className="row mt-4">
+            {/* <div className="row mt-4">
               <div className="col">
                 <img src="images/aboutus/gallery10.png" width="610px" height="846px" />
               </div>
@@ -93,11 +91,11 @@ export default function Aboutus() {
                 <img src="images/aboutus/gallery7.png" width="610px" height="415px" />
                 <img src="images/aboutus/gallery12.png" width="610px" height="415px" className="mt-3" />
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
-
-      </header></div>
+        <Footer/>
+      </>
 
   )
 }
