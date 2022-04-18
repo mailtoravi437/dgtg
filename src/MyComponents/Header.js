@@ -44,10 +44,10 @@ export default function Header(props) {
                 </div>
                 :""}
                 <div className="hamberger-menu">
-                        <a href='#' onclick={() => SetshowMediaIcons(!showMediaIcons)}>
+                        <a href='#' onClick={() => SetshowMediaIcons(!showMediaIcons)}>
                             <GiHamburgerMenu />
                         </a>
-                    </div>
+                </div>
             </div>
 
         </div>

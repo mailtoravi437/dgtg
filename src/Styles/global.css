@@ -732,13 +732,25 @@ b
         top: 75px;
         /* left: 120%; */
         display: block;
-        padding: 100px 0px;
-        text-align: center;
+        position: absolute;
+        padding: 50px 0px;
         width: 100%;
         background: #ffffff;
         transition: 0.5s;
         z-index: 999;
         border-top: 1px solid rgba(0,0,0,0.2);
+    }
+
+    header ul li
+    {
+        float: none;
+    }
+
+    header ul li a
+    {
+        text-align: left;
+        font-size: 25px;
+        line-height: 25px;
     }
 
     .head h1
