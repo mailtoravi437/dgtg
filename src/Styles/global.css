@@ -65,6 +65,11 @@ header ul li a
     padding: 20px 15px;
 }
 
+header ul li a:nth-child(8)
+{
+    color: #ffffff;
+}
+
 .active-bg
 {
     background-color: #AC2027;
@@ -111,15 +116,14 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    font-size: 64px;
-    line-height: 95px;
+    font-size: 80px;
+    line-height: 98px;
     color: #171F33;
 }
 
 .home2 p,
 .home3 p,
 .home6 p,
-.service-header p,
 .latest-post p,
 .post-deatails p
 {
@@ -225,7 +229,7 @@ footer{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
     color: #63666F;
 }
@@ -264,26 +268,31 @@ footer{
 
 .service-header{
     margin: auto auto;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .service-header h1{
     font-family: 'Montserrat', sans-serif;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 120px;
-  letter-spacing: 0em;
-  color:#171F33;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120px;
+    letter-spacing: 0em;
+    color:#171F33;
 }
 
 .service-header p
 {
+    width: 60%;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 150%;
     color: #63666F;
 }
@@ -764,6 +773,10 @@ b
         font-size: 15px;
     }
 
+    .home4
+    {
+        padding: 0 !important;
+    }
     .head-nxt
     {
         display: block;
@@ -803,6 +816,17 @@ b
         padding: 0rem !important;
     }
 
+    .service-header
+    {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .service-header p
+    {
+        width: 100%;
+    }
+
     .letsgo
     {
         flex-direction: column;
@@ -824,8 +848,9 @@ b
 
     .service-header h1
     {
-        font-size: 25px;
-        line-height: 39px;
+        font-size: 32px;
+        line-height: 45px;
+        align-items: start;
     }
 
     .box-details p,
