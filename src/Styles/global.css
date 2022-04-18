@@ -76,6 +76,14 @@ header ul li a:nth-child(8)
     color: #FFFFFF;
 }
 
+.active-bg :hover
+{
+    background-color: #AC2027;
+    color: #FFFFFF;
+}
+
+
+
 
 .head h1
 {
