@@ -51,7 +51,7 @@ export default function Home() {
                     <p>We create media buying strategies &amp; <b>campaign management in digital marketing</b> from the concept stage to the actual execution on multiple devices worldwide in the digital sphere. </p>
                   </div>
                 </div>
-                <div className="col-sm-12 col-md-6 col-lg-6 p-3" style={{ background: '#171F33' }}>
+                <div className="col-sm-12 col-md-6 col-lg-6 p-5" style={{ background: '#171F33' }}>
                   <div className="home4">
                     <img src="images/Home/client.png" height="48px" width="48px" />
                     <p>200+ Clients served in last 6 years</p>
