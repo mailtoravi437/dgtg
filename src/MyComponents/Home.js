@@ -36,7 +36,7 @@ export default function Home() {
               <div className="row pt-5">
                 <div className="col-sm-12 col-md-6 col-lg-6">
                   <div className="home1">
-                    <h2>Why <span style={{ color: '#AC2027' }}>Choose</span> us?</h2>
+                    <h2>Why <br/> <span style={{ color: '#AC2027' }}>Choose</span> us?</h2>
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
@@ -47,7 +47,7 @@ export default function Home() {
               </div>
               <div className="row">
                 <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
-                  <div className="home3 p-5">
+                  <div className="home3 py-5">
                     <p>We create media buying strategies &amp; <b>campaign management in digital marketing</b> from the concept stage to the actual execution on multiple devices worldwide in the digital sphere. </p>
                   </div>
                 </div>

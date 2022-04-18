@@ -57,7 +57,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 20px;
     display: block;
     text-align: center;
@@ -78,7 +78,7 @@ header ul li a
     font-style: normal;
     font-weight: 800;
     font-size: 80px;
-    line-height: 122px;
+    line-height: 95px;
     color: #171F33;
 }
 
@@ -112,7 +112,7 @@ header ul li a
     font-style: normal;
     font-weight: 800;
     font-size: 64px;
-    line-height: 98px;
+    line-height: 95px;
     color: #171F33;
 }
 
@@ -126,7 +126,7 @@ header ul li a
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
     color: #63666F;
 }
@@ -155,7 +155,7 @@ footer{
 
 .footer-heading h2
 {
-    font-family: 'Monda';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 23px;
