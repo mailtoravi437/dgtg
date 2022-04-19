@@ -25,7 +25,7 @@ a:visited
 
 .active
 {
-    color: #101010;
+    color: #FFFFFF;
     font-weight: 500;
     
 }
@@ -44,7 +44,6 @@ header ul
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: #ffffff;
 }
 
 header ul li
@@ -70,13 +69,6 @@ header ul li a:nth-child(8)
     color: #ffffff;
 }
 
-.active-bg
-{
-    background-color: #AC2027;
-    color: #FFFFFF;
-}
-
-
 .head h1
 {
     font-family: 'Montserrat';
@@ -97,7 +89,7 @@ header ul li a:nth-child(8)
     color: #63666F;
 }
 
-.head p
+.head-nxt p
 {
     margin-top: 35px;
     font-family: 'Montserrat';
@@ -105,8 +97,9 @@ header ul li a:nth-child(8)
     font-weight: 600;
     font-size: 13px;
     line-height: 20px;
-    color: #63666F;
-    padding-right: 35px;
+    color: #AC2027;
+    padding: 15px 40px 15px 40px;
+    margin-right: 50px;
 }
 
 .home1 h2,
@@ -116,13 +109,20 @@ header ul li a:nth-child(8)
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    font-size: 80px;
-    line-height: 98px;
+    font-size: 56px;
+    line-height: 68px;
     color: #171F33;
 }
+.latest-post
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.home2 p,
-.home3 p,
+
+.home1 p,
 .home6 p,
 .latest-post p,
 .post-deatails p
@@ -130,9 +130,14 @@ header ul li a:nth-child(8)
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 150%;
     color: #63666F;
+}
+
+.latest-post p
+{
+    width: 50%;
 }
 
 .home4 p
@@ -201,7 +206,6 @@ footer{
     margin: 0 5px;
 }
 
-
 .footer-details ul li
 {
     list-style: none;
@@ -264,6 +268,7 @@ footer{
     font-size: 13px;
     line-height: 20px;
     color: #AC2027;
+    padding: 15px 40px 15px 40px;
 }
 
 .service-header{
@@ -273,7 +278,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .service-header h1{
@@ -658,7 +662,6 @@ textarea:focus, input:focus{
     color: #171F33;
 }
 
-
 .upper-right p{
     font-family: 'DM Sans';
     font-style: normal;
@@ -667,7 +670,6 @@ textarea:focus, input:focus{
     line-height: 150%;
     color: #63666E;
 }
-
 
 b
 {
@@ -811,6 +813,11 @@ b
     line-height: 29px;
     }
 
+    .home1
+    {
+        padding: 0px 0px 100px 0px !important;
+    }
+
     .home5, .home2, .home3
     {
         padding: 0rem !important;
@@ -841,11 +848,6 @@ b
         line-height: 32px;
     }
 
-    .contactus
-    {
-        justify-content: center !important;
-    }
-
     .service-header h1
     {
         font-size: 32px;
@@ -859,6 +861,11 @@ b
     {
         font-size: 15px;
         line-height: 150%;
+    }
+
+    .latest-post p
+    {
+        width: 100%;
     }
     
     .upper-left h1
