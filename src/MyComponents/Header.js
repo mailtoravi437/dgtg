@@ -6,18 +6,18 @@ export default function Header(props) {
     const [ showMediaIcons, SetshowMediaIcons ]= useState(false);
     const showNav = props.showNav??true;
   return (
-    <header>
+    <header style={{background: '#171F33'}}>
 
         <div className="container">
             <div className="navbar">
                 <div className="logo">
-                   <Link to="/"><img src="images/Home/dgtglogo.png" width="84px" height="46px" alt='' /></Link>
+                   <Link to="/"><img src="images/Home/dgtglogo1.png" width="84px" height="46px" alt='' /></Link>
                 </div>
                 {showNav?
                 <div className={showMediaIcons ? "menu menu-mobile-view" : "menu"}>
                     <ul className="menu-list">
                         <li>
-                            <Link to="/" className="active" >Home</Link>
+                            <Link to="/" className="active">Home</Link>
                         </li>
                         <li>
                             <Link to="/services">Services</Link>
@@ -38,7 +38,7 @@ export default function Header(props) {
                             <Link to="/blog">Blogs</Link>
                         </li>
                         <li>
-                            <Link to="/contactus" className="active-bg">Contact Us</Link>
+                            <Link to="/contactus">Contact Us</Link>
                         </li>
                     </ul>
                 </div>
