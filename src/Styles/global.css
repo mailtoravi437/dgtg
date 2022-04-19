@@ -27,7 +27,6 @@ a:visited
 {
     color: #FFFFFF;
     font-weight: 500;
-    
 }
 
 .navbar
@@ -739,6 +738,11 @@ b
     .menu
     {
         display: none;
+    }
+
+    .active
+    {
+        color: #101010;
     }
 
     .hamberger-menu
