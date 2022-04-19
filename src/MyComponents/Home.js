@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from './Footer'
 import Header from './Header'
 import { Link } from 'react-router-dom'
+import { getLatestBlog } from '../Functions/functions'
+import BlogCard from './BlogCard'
 
 
 export default function Home() {
+  const [blogs, setBlogs] = useState([]);
+  useEffect(() => {
+    async function getPosts(){
+      let response = await getLatestBlog();
+      setBlogs(response);
+    }
+    getPosts();
+  }, [])
   return (
     <>
       <Header />
@@ -103,30 +113,15 @@ export default function Home() {
               <p>Visit this space to read the latest posts from our team. We‘ll share our reflections on startups, traveling, recent insights on marketing &amp; growth, artificial intelligence (AI), virtual reality (VR), Internet of things (IoT) with some recent topics on COVID &amp; Lockdown. </p>
             </div>
             <div className="row mt-15">
-              <div className="col-sm-12 col-md-4 col-lg-4">
-                <div className="post-img">
-                  <img src="images/Home/post1.png" />
-                </div>
-                <div className="post-deatails mt-4">
-                  <p style={{ color: '#171F33' }}>4 Crucial Financial Metrics That Every Startup Must Address</p>
-                </div>
-              </div>
-              <div className="col-sm-12 col-md-4 col-lg-4">
-                <div className="post-img">
-                  <img src="images/Home/post2.png" />
-                </div>
-                <div className="post-deatails mt-4">
-                  <p style={{ color: '#171F33' }}>Top 10 Android Apps You Must Download In 2019</p>
-                </div>
-              </div>
-              <div className="col-sm-12 col-md-4 col-lg-4">
-                <div className="post-img">
-                  <img src="images/Home/post3.png" />
-                </div>
-                <div className="post-deatails mt-4">
-                  <p style={{ color: '#171F33' }}>8 Best Practices for Email Marketing in 2019</p>
-                </div>
-              </div>
+              {blogs.length > 0?
+              blogs.map((blog) => <BlogCard
+              key={blog.id} 
+              title={blog.attributes.title}
+              thumbnail={blog.attributes.thumbnail.data.attributes.url}
+              slug={blog.attributes.slug} 
+              />)
+              :""}
+              
             </div>
           </div>
         </section>

@@ -11,7 +11,7 @@ export default function Header(props) {
         <div className="container">
             <div className="navbar">
                 <div className="logo">
-                   <Link to="/"><img src="images/Home/dgtglogo.png" width="84px" height="46px" alt='' /></Link>
+                   <Link to="/"><img src="/images/Home/dgtglogo.png" width="84px" height="46px" alt='' /></Link>
                 </div>
                 {showNav?
                 <div className={showMediaIcons ? "menu menu-mobile-view" : "menu"}>
