@@ -629,6 +629,17 @@ textarea:focus, input:focus{
     color: rgba(99, 102, 111, 0.6);
     padding: 5px 0px;
 }
+
+.post-img{
+    width: 395px;
+    height: 395px;
+}
+
+.post-img img{
+    width: 100%;
+    height: 100%;
+}
+
 .career h2
 {
     font-family: 'Montserrat';

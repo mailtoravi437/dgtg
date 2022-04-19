@@ -1,33 +1,38 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import moment from 'moment';
 import "../Styles/global.css";
+import { getBlog, getCategories, getLatestBlog } from '../Functions/functions';
 import Header from './Header';
+import Footer from './Footer';
 
 
 export default function BlogDetails() {
     const param = useParams();
     const [blog, setBlog] = useState(null);
+    const [categories, setCategories] = useState([]);
+    const [loaded, setLoaded] = useState(false);
     useEffect(() => {
-        const headers = {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer ab2eb18c7b36c02c1959eed0dfff654a45ab64daf6d7740a96d9c3bbf863f55c66cf48c6e978445f7f2cc0cb3c0119da3cf1ab4f05b7379659b4ea9b369cad7dba3933bbe900c97353c32ed9a03023ab8d1851f01a6331f424d8efeeef06d673352cc1ff0956fc7fd14f96b99cb46fa0d5ce8ae863422a0e417d6f246060874d',
-        }
-        async function getBlog(){
-            let response = await fetch(process.env.REACT_APP_API_BASE_URL+`/api/blogs?filters[slug]=${param.slug}&populate=*`, {headers});
-            let data = await response.json();
-            if(data.data.length > 0){
-                setBlog(data.data[0]);
+        async function fetchData() {
+            const blog = await getBlog(param.slug);
+            const categories = await getCategories();
+            if (blog != null) {
+                setBlog(blog);
+                setLoaded(true);
+            }
+            if (categories != null) {
+                setCategories(categories);
             }
         }
-        getBlog();
+        fetchData();
     }, []);
-    if(blog!=null){
+    console.log(blog);
+    if (blog != null) {
         const { title, content, publishedAt, thumbnail } = blog.attributes;
         const { url } = thumbnail.data.attributes;
-        console.log(thumbnail);
         return (
             <>
-                <Header/>
+                <Header />
                 <section>
                     <div className="container mt-5 mb-15">
                         <div className="blogs">
@@ -35,10 +40,10 @@ export default function BlogDetails() {
                                 <div className="col-2" />
                                 <div className="col-8">
                                     <div className="blog-img">
-                                        <img src={process.env.REACT_APP_API_BASE_URL+url} />
+                                        <img src={process.env.REACT_APP_API_BASE_URL + url} width="100%" />
                                     </div>
                                     <div className="blog-date">
-                                        <p>{publishedAt} <span style={{ color: '#AC2027' }}>admin</span></p>
+                                        <p>{moment(publishedAt).format('Do MMMM YYYY')} by <span style={{ color: '#AC2027' }}>admin</span></p>
                                     </div>
                                     <div className="blog-head">
                                         <h2>{title}</h2>
@@ -91,20 +96,22 @@ export default function BlogDetails() {
                                         <div className="search-box">
                                             <div className="search-txt d-flex justify-content-start align-items-center">
                                                 <input type="text" placeholder="Search" />
+                                                <div className="search-btn d-flex justify-content-end align-items-center">
+                                                    <a href="#"><i className="far fa-search" /></a>
+                                                </div>
                                             </div>
-                                            <div className="search-btn d-flex justify-content-end align-items-center">
-                                                <a href="#"><i className="far fa-search" /></a>
-                                            </div>
+
                                         </div>
                                     </div>
                                     <div className="categories">
                                         <ul>
                                             <li><b style={{ color: '#171F33' }}>Categories</b></li>
-                                            <li>Advice</li>
-                                            <li>Blog</li>
-                                            <li>Business</li>
-                                            <li>Consulting</li>
-                                            <li>Uncategorized</li>
+                                            {
+                                                categories.length > 0 ?
+                                                    categories.map((category) => <li>
+                                                        <Link to="/">{category.attributes.name}</Link></li>) :
+                                                    ""
+                                            }
                                         </ul>
                                     </div>
                                 </div>
@@ -112,9 +119,10 @@ export default function BlogDetails() {
                         </div>
                     </div>
                 </section>
+                <Footer />
             </>
         )
     }
     return "";
-    
+
 }

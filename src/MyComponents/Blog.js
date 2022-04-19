@@ -1,29 +1,55 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { getCategories, getLatestBlog, getBlogsByCategory, searchBlogs } from '../Functions/functions';
 import "../Styles/global.css";
 import BlogCard from './BlogCard';
 import Header from './Header';
+import Footer from './Footer';
 
 
 export default function Blog() {
     const [blogs, setBlogs] = useState([]);
+    const [categories, setCategories] = useState([]);
     const [loaded, setLoaded] = useState(false);
+    const [activeCategory , setActiveCategory] = useState(null);
+    const [search, setSearch] = useState();
     useEffect(() => {
-        const headers = {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer ab2eb18c7b36c02c1959eed0dfff654a45ab64daf6d7740a96d9c3bbf863f55c66cf48c6e978445f7f2cc0cb3c0119da3cf1ab4f05b7379659b4ea9b369cad7dba3933bbe900c97353c32ed9a03023ab8d1851f01a6331f424d8efeeef06d673352cc1ff0956fc7fd14f96b99cb46fa0d5ce8ae863422a0e417d6f246060874d',
-        }
         async function fetchBlogs() {
-            const response = await fetch(process.env.REACT_APP_API_BASE_URL + '/api/blogs?populate=*', { headers });
-            const data = await response.json();
-            setBlogs(data.data);
-            setLoaded(true);
+           const response = await getLatestBlog();
+           const categories = await getCategories();
+           if(response != null){
+               setBlogs(response);
+               setLoaded(true);
+           }
+           if(categories != null){
+               setCategories(categories);
+           }
         }
         fetchBlogs();
     }, []);
-    blogs.forEach(ele => {
-        console.log(ele);
-    })
+    const getByCategory = async (category) =>{
+        setActiveCategory(category);
+        console.log(category);
+        const blogs = await getBlogsByCategory(category);
+        if(blogs != null){
+            setBlogs(blogs);
+        }else{
+            setBlogs([]);
+        }
+    }
+
+    const handleSearch = async (event) => {
+        if(event.key == "Enter"){
+            let searchText = event.target.value;
+            searchText = encodeURIComponent(searchText.trim());
+            let blogs = searchText.length > 0? await searchBlogs(searchText) : await getLatestBlog();
+            if(blogs != null){
+                setBlogs(blogs);
+            }else{
+                setBlogs([]);
+            }
+        }
+    }
     return (
         <>
             <Header />
@@ -37,7 +63,7 @@ export default function Blog() {
                     <div className="search d-flex flex-column justify-content-start align-items-center mt-5">
                         <div className="search-box">
                             <div className="search-txt d-flex justify-content-start align-items-center">
-                                <input type="text" placeholder="Search blogs here" />
+                                <input type="text" placeholder="Search blogs here" onKeyUp={handleSearch}/>
                             </div>
                             <div className="search-btn d-flex justify-content-end align-items-center">
                                 <a href="#"><i className="far fa-search" /></a>
@@ -45,11 +71,11 @@ export default function Blog() {
                         </div>
                         <div className="search-list">
                             <ul>
-                                <li>Advice</li>
-                                <li>Blog</li>
-                                <li>Business</li>
-                                <li>Consulting</li>
-                                <li>Uncategorized</li>
+                                {
+                                    categories.length > 0 ?
+                                    categories.map((category)=><li style={{cursor:"pointer"}} onClick={() => getByCategory(category.attributes.name)}>{category.attributes.name}</li>):
+                                    ""
+                                }
                             </ul>
                         </div>
                     </div>
@@ -67,6 +93,7 @@ export default function Blog() {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </>
     )
 }
