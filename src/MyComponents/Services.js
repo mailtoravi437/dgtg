@@ -102,8 +102,8 @@ export default function Services() {
             <h2>Let's get started working together.</h2>
           </div>
         </div>
-        <div className="col-sm-12 col-md-6 col-lg-6">
-          <div className="contactus d-flex justify-content-end align-items-center">
+        <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-end align-items-center">
+          <div className="contactus">
           <Link to="/contactus" ><h4>Contact us<i className="fal fa-long-arrow-right" style={{color: '#AC2027'}} /></h4></Link>
           </div>
         </div> 

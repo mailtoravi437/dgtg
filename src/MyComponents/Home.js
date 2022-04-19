@@ -25,7 +25,7 @@ export default function Home() {
               <div className="col-sm-12 col-md-6 col-lg-6 order-md-1 order-2">
                 <div className="head">
                   <h1>Transform your <span style={{ color: '#AC2027' }}> Brand. </span></h1>
-                  <h3>We're a <b>digital marketing agency</b> that helps businesses to get found, get talked about, and grow to the next level! </h3>
+                  <h3 className='py-5'>We're a <b>digital marketing agency</b> that helps businesses to get found, get talked about, and grow to the next level! </h3>
                   <div className="head-nxt">
                     <p>We do it all <i className="fal fa-long-arrow-right" /></p>
                     <p style={{ color: '#AC2027' }}>Let’s get started <i className="fal fa-long-arrow-right" /></p>
@@ -46,7 +46,7 @@ export default function Home() {
               <div className="row pt-5">
                 <div className="col-sm-12 col-md-6 col-lg-6">
                   <div className="home1">
-                    <h2>Why <span style={{ color: '#AC2027' }}>Choose</span> us?</h2>
+                    <h2>Why <br/> <span style={{ color: '#AC2027' }}>Choose</span> us?</h2>
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
@@ -57,12 +57,12 @@ export default function Home() {
               </div>
               <div className="row">
                 <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
-                  <div className="home3 p-5">
+                  <div className="home3 py-5">
                     <p>We create media buying strategies &amp; <b>campaign management in digital marketing</b> from the concept stage to the actual execution on multiple devices worldwide in the digital sphere. </p>
                   </div>
                 </div>
-                <div className="col-sm-12 col-md-6 col-lg-6 p-3" style={{ background: '#171F33' }}>
-                  <div className="home4">
+                <div className="col-sm-12 col-md-6 col-lg-6 p-5" style={{ background: '#171F33' }}>
+                  <div className="home4 pb-5">
                     <img src="images/Home/client.png" height="48px" width="48px" />
                     <p>200+ Clients served in last 6 years</p>
                   </div>
@@ -97,8 +97,8 @@ export default function Home() {
                   <h2 style={{ color: '#FFFFFF' }}>Let's get started working together.</h2>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6 col-lg-6">
-                <div className="contactus d-flex justify-content-end align-items-center">
+              <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-end align-items-center">
+                <div className="contactus">
                 <Link to="/contactus" ><h4 style={{ color: '#FFFFFF' }}>Contact us<i className="fal fa-long-arrow-right" /></h4></Link>
                 </div>
               </div>
