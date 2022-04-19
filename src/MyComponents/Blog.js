@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { getCategories, getLatestBlog, getBlogsByCategory } from '../Functions/functions';
+import { getCategories, getLatestBlog, getBlogsByCategory, searchBlogs } from '../Functions/functions';
 import "../Styles/global.css";
 import BlogCard from './BlogCard';
 import Header from './Header';
@@ -12,6 +12,7 @@ export default function Blog() {
     const [categories, setCategories] = useState([]);
     const [loaded, setLoaded] = useState(false);
     const [activeCategory , setActiveCategory] = useState(null);
+    const [search, setSearch] = useState();
     useEffect(() => {
         async function fetchBlogs() {
            const response = await getLatestBlog();
@@ -35,7 +36,19 @@ export default function Blog() {
         }else{
             setBlogs([]);
         }
+    }
 
+    const handleSearch = async (event) => {
+        if(event.key == "Enter"){
+            let searchText = event.target.value;
+            searchText = encodeURIComponent(searchText.trim());
+            let blogs = searchText.length > 0? await searchBlogs(searchText) : await getLatestBlog();
+            if(blogs != null){
+                setBlogs(blogs);
+            }else{
+                setBlogs([]);
+            }
+        }
     }
     return (
         <>
@@ -50,7 +63,7 @@ export default function Blog() {
                     <div className="search d-flex flex-column justify-content-start align-items-center mt-5">
                         <div className="search-box">
                             <div className="search-txt d-flex justify-content-start align-items-center">
-                                <input type="text" placeholder="Search blogs here" />
+                                <input type="text" placeholder="Search blogs here" onKeyUp={handleSearch}/>
                             </div>
                             <div className="search-btn d-flex justify-content-end align-items-center">
                                 <a href="#"><i className="far fa-search" /></a>

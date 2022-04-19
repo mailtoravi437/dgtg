@@ -4,7 +4,7 @@ const headers = {
 }
 
 export async function getBlog(slug){
-    let response = await fetch(process.env.REACT_APP_API_BASE_URL+`/api/blogs?filters[slug]=${slug}&populate=*`, {headers});
+    let response = await fetch(process.env.REACT_APP_API_BASE_URL+`/api/blogs?filters[slug]=${slug}&populate=*`);
     let data = await response.json();
     if(data.data.length > 0){
         return data.data[0];
@@ -13,7 +13,7 @@ export async function getBlog(slug){
 }
 
 export async function getLatestBlog(){
-    let response = await fetch(process.env.REACT_APP_API_BASE_URL+`/api/blogs?&populate=*`, {headers});
+    let response = await fetch(process.env.REACT_APP_API_BASE_URL+`/api/blogs?&populate=*`);
     let data = await response.json();
     if(data.data.length > 0){
         return data.data;
@@ -22,7 +22,7 @@ export async function getLatestBlog(){
 }
 
 export async function getCategories(){
-    let response = await fetch(process.env.REACT_APP_API_BASE_URL+`/api/categories?populate=image`, {headers});
+    let response = await fetch(process.env.REACT_APP_API_BASE_URL+`/api/categories?populate=image`);
     let data = await response.json();
     if(data.data.length > 0){
         return data.data;
@@ -31,7 +31,16 @@ export async function getCategories(){
 }
 
 export async function getBlogsByCategory(category){
-    let response = await fetch(process.env.REACT_APP_API_BASE_URL+`/api/blogs?populate=*&filters[$and][0][categories][name][$eq]=${category}`, {headers});
+    let response = await fetch(process.env.REACT_APP_API_BASE_URL+`/api/blogs?populate=*&filters[$and][0][categories][name][$eq]=${category}`);
+    let data = await response.json();
+    if(data.data.length > 0){
+        return data.data;
+    }
+    return null;
+}
+
+export async function searchBlogs(param){
+    let response = await fetch(process.env.REACT_APP_API_BASE_URL+`/api/blogs?populate=*&_q=${param}`);
     let data = await response.json();
     if(data.data.length > 0){
         return data.data;
