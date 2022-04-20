@@ -172,14 +172,24 @@ header ul li a:nth-child(8)
     display: flex;
 }
 
-footer{
+.footer{
     position: relative;
     z-index: 15;
 }
 
-.footer-heading{
-    padding-top: 30%;
+.foot{
+    padding-top: 10%;
 }
+
+
+
+.footer-details ul li {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.4);
+    padding-left: 0;
+    font-size: 17px;
+}
+
 
 .footer-heading h2
 {

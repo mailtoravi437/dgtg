@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <footer style={{ background: '#171F33' }}>
         <div className="container p-md-5 p-lg-5 p-4">
-          <div className="row">
+          <div className="row foot">
             <div className="col-sm-12 col-md-6 col-lg-3 order-2 order-md-1">
               <div className="footer-heading">
                 <h2 className='text-md-start text-lg-start text-center'>DGTG</h2>
