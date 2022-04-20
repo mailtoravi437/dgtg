@@ -17,7 +17,7 @@ export default function Header(props) {
                 <div className={showMediaIcons ? "menu menu-mobile-view" : "menu"}>
                     <ul className="menu-list">
                         <li>
-                            <Link to="/" className="active">Home</Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
                             <Link to="/services">Services</Link>

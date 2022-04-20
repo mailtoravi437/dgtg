@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { FaWhatsapp } from "react-icons/gi";
+//  import { FaWhatsapp } from "react-icons/gi";
 
 export default function Footer() {
   return (
@@ -60,8 +60,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-
-
     </>
   )
 }

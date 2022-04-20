@@ -13,7 +13,7 @@ export default function Services() {
     <div className="container">
       <div className="service-header">
         <h1>Services</h1>
-        <p>We're a dynamic internet <b>marketing agency</b> that gives you the trust and confidence that you need to grow your company.</p>
+        <p>We're a dynamic internet marketing agency that gives you the trust and confidence that you need to grow your company.</p>
       </div>
     </div>        
   </section>

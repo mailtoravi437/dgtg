@@ -35,6 +35,16 @@ a:visited
     padding-bottom: 10px !important;
 }
 
+.menu-list li a:active{
+    color: #ffffff !important;
+}
+
+.menu-list li a:focus{
+    color: #ffffff !important;
+
+
+}
+
 
 
 header ul
@@ -68,6 +78,12 @@ header ul li a:nth-child(8)
     color: #ffffff;
 }
 
+
+
+.py-5 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
 .head h1
 {
     font-family: 'Montserrat';
@@ -161,6 +177,10 @@ footer{
     z-index: 15;
 }
 
+.footer-heading{
+    padding-top: 30%;
+}
+
 .footer-heading h2
 {
     font-family: 'Montserrat';
@@ -176,7 +196,7 @@ footer{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 23px;
     line-height: 150%;
     color: #FFFFFF;
 }
@@ -186,7 +206,7 @@ footer{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 150%;
     color: rgba(255, 255, 255, 0.4);
 }
@@ -244,6 +264,11 @@ footer{
     border: 1px solid #63666F33;
 }
 
+.letsgo{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .letsgo h2{
     font-family: 'Montserrat';
     font-style: normal;
@@ -252,6 +277,7 @@ footer{
     line-height: 39px;
     color: #171F33;
     margin-left: 25px;
+    width: 50%;
 }
 
 .contact-us--form{
@@ -328,9 +354,13 @@ footer{
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 32px;
+    line-height: 8px;
     color: #63666F;
     opacity: 0.6;
+}
+
+.mt-15{
+    margin-top: 40px !important;
 }
 
 .our-work ul
@@ -465,7 +495,7 @@ footer{
 {
     float: right;
     padding: 16px 48px;
-    width: 138px;
+    width: 100%;
     height: 52px;
     background: #AC2027;
     font-family: 'Montserrat';
@@ -639,6 +669,10 @@ textarea:focus, input:focus{
     height: 100%;
 }
 
+.career{
+    padding-top: 30px;
+}
+
 .career h2
 {
     font-family: 'Montserrat';
@@ -675,10 +709,16 @@ textarea:focus, input:focus{
 .upper-right p{
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 700 !important;
     line-height: 150%;
     color: #63666E;
+}
+
+
+
+.upper-right{
+    font-weight: 400;
+    font-size: 20px;
 }
 
 b
@@ -816,6 +856,7 @@ b
         font-size: 27px;
         line-height: 39px;
     }
+
 
     .home4
     {

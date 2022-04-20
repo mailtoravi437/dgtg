@@ -25,7 +25,7 @@ export default function Home() {
               <div className="col-sm-12 col-md-6 col-lg-6 order-md-1 order-2">
                 <div className="head">
                   <h1>Transform your <span style={{ color: '#AC2027' }}> Brand. </span></h1>
-                  <h3 className='py-5'>We're a <b>digital marketing agency</b> that helps businesses to get found, get talked about, and grow to the next level! </h3>
+                  <h3 className="py-5">We're a digital marketing agency that helps businesses to get found, get talked about, and grow to the next level! </h3>
                   <div className="head-nxt">
                     <p style={{background: '#AC2027', color: '#FFFFFF'}}>We do it all</p>
                     <p style={{border: '1px solid'}}>Let’s get started</p>
@@ -47,8 +47,8 @@ export default function Home() {
                 <div className="col-sm-12 col-md-6 col-lg-6">
                   <div className="home1" style={{padding: '100px 130px 100px 0px'}}>
                     <h2>Why <br/> <span style={{ color: '#AC2027' }}>Choose</span> us?</h2>
-                    <p>Choosing us, you would be choosing the best <b>Digital Marketing Agency in India.</b> We’re a creative agency and technology solutions partner, with over <b>200+</b> clients in the last 6 years. </p>
-                    <p>We create media buying strategies &amp; <b>campaign management in digital marketing</b> from the concept stage to the actual execution on multiple devices worldwide in the digital sphere. </p>
+                    <p>Choosing us, you would be choosing the best Digital Marketing Agency in India. We’re a creative agency and technology solutions partner, with over 200+ clients in the last 6 years. </p>
+                    <p>We create media buying strategies &amp; campaign management in digital marketing from the concept stage to the actual execution on multiple devices worldwide in the digital sphere. </p>
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-6 p-5" style={{ background: '#171F33' }}>
@@ -72,7 +72,7 @@ export default function Home() {
               <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
                 <div className="home6 m-2">
                   <h2>We’re <span style={{ color: '#AC2027' }}>DGTG</span></h2>
-                  <p><b>A digital marketing agency</b> with a wide reach across India. Our in-house performance network &amp; media buying team works to achieve our client’s <b>150%</b> ROI. </p>
+                  <p>A digital marketing agency with a wide reach across India. Our in-house performance network &amp; media buying team works to achieve our client’s <b>150%</b> ROI. </p>
                 </div>
               </div>
             </div>
