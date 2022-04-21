@@ -14,7 +14,7 @@
 }
 .mb-15
 {
-    margin-bottom: 15vh !important;
+    margin-bottom: 10vh !important;
 }
 
 a:link,
@@ -40,6 +40,12 @@ a:visited
 }
 
 .menu-list li a:focus{
+    color: #ffffff !important;
+
+
+}
+
+.menu-list li a:hover{
     color: #ffffff !important;
 
 
@@ -269,14 +275,16 @@ header ul li a:nth-child(8)
 
 .box
 {
-    height: 300px;
+    height: 60vh;
     width: 100%;
     border: 1px solid #63666F33;
 }
 
+
+
 .letsgo{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 10%;
+    padding-top: 10%;
 }
 
 .letsgo h2{

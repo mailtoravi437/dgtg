@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Header(props) {
@@ -17,28 +17,28 @@ export default function Header(props) {
                 <div className={showMediaIcons ? "menu menu-mobile-view" : "menu"}>
                     <ul className="menu-list">
                         <li>
-                            <Link to="/">Home</Link>
+                            <NavLink to="/" ClassName="active">Home</NavLink>
                         </li>
                         <li>
-                            <Link to="/services">Services</Link>
+                            <NavLink to="/services" ClassName="active">Services</NavLink>
                         </li>
                         <li>
-                            <Link to="/team" >Our Team</Link>
+                            <NavLink to="/team" ClassName="active">Our Team</NavLink>
                         </li>
                         <li>
-                            <Link to="/about">About Us</Link>
+                            <NavLink to="/about" ClassName="active">About Us</NavLink>
                         </li>
                         <li>
-                            <Link to="/ourwork">Our Work</Link>
+                            <NavLink to="/ourwork" ClassName="active">Our Work</NavLink>
                         </li>
                         <li>
-                            <Link to="/career">Career</Link>
+                            <NavLink to="/career" ClassName="active">Career</NavLink>
                         </li>
                         <li>
-                            <Link to="/blog">Blogs</Link>
+                            <NavLink to="/blog" ClassName="active">Blogs</NavLink>
                         </li>
                         <li>
-                            <Link to="/contactus">Contact Us</Link>
+                            <NavLink to="/contactus" ClassName="active">Contact Us</NavLink>
                         </li>
                     </ul>
                 </div>
