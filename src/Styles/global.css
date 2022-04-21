@@ -184,7 +184,7 @@ header ul li a:nth-child(8)
 }
 
 .foot{
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 
@@ -377,9 +377,9 @@ header ul li a:nth-child(8)
     opacity: 0.6;
 }
 
-.mt-15{
+/* .mt-15{
     margin-top: 40px !important;
-}
+} */
 
 .our-work ul
 {

@@ -4,7 +4,7 @@ import Header from './Header'
 import { Link } from 'react-router-dom'
 import { getLatestBlog } from '../Functions/functions'
 import BlogCard from './BlogCard'
-
+import Carosoul from './Carosoul'
 
 export default function Home() {
   const [blogs, setBlogs] = useState([]);
@@ -51,11 +51,9 @@ export default function Home() {
                     <p>We create media buying strategies &amp; campaign management in digital marketing from the concept stage to the actual execution on multiple devices worldwide in the digital sphere. </p>
                   </div>
                 </div>
+
                 <div className="col-sm-12 col-md-6 col-lg-6 p-5" style={{ background: '#171F33' }}>
-                  <div className="home4 pb-5">
-                    <img src="images/Home/client.png" height="48px" width="48px" />
-                    <p>200+ Clients served in last 6 years</p>
-                  </div>
+                  <Carosoul/>
                 </div>
               </div>
             </div>
@@ -72,7 +70,7 @@ export default function Home() {
               <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
                 <div className="home6 m-2">
                   <h2>We’re <span style={{ color: '#AC2027' }}>DGTG</span></h2>
-                  <p>A digital marketing agency with a wide reach across India. Our in-house performance network &amp; media buying team works to achieve our client’s <b>150%</b> ROI. </p>
+                  <p>A digital marketing agency with a wide reach across India. Our in-house performance network &amp; media buying team works to achieve our client’s 150% ROI. </p>
                 </div>
               </div>
             </div>
