@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link,NavLink } from 'react-router-dom'
+import { Link,NavLink, useParams } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Header(props) {
@@ -18,28 +18,28 @@ export default function Header(props) {
                 <div className={showMediaIcons ? "menu menu-mobile-view" : "menu"}>
                     <ul className="menu-list">
                         <li>
-                            <NavLink to="/" className="active">Home</NavLink>
+                            <NavLink to="/" >Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/services" className="active">Services</NavLink>
+                            <NavLink to="/services" className="">Services</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/team" className="active">Our Team</NavLink>
+                            <NavLink to="/team" className="">Our Team</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about" className="active">About Us</NavLink>
+                            <NavLink to="/about" className="">About Us</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/ourwork" className="active">Our Work</NavLink>
+                            <NavLink to="/ourwork" className="">Our Work</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/career" className="active">Career</NavLink>
+                            <NavLink to="/career" className="">Career</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/blog" className="active">Blogs</NavLink>
+                            <NavLink to="/blog" className="">Blogs</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contactus" className="active">Contact Us</NavLink>
+                            <NavLink to="/contactus" className="">Contact Us</NavLink>
                         </li>
                     </ul>
                 </div>

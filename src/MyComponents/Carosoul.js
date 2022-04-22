@@ -42,8 +42,6 @@ export default () => {
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
       pagination={{
         clickable: true,
       }} modules={[Autoplay,Pagination]} className="homeSlider"
