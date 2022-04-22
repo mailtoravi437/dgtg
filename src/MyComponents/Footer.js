@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer() {
   return (
-    <>
+
       <footer style={{ background: '#171F33' }}>
         <div className="container p-md-5 p-lg-5 p-4">
           <div className="row foot">
@@ -60,6 +60,5 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-    </>
   )
 }

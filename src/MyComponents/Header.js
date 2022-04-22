@@ -5,13 +5,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export default function Header(props) {
     const [ showMediaIcons, SetshowMediaIcons ]= useState(false);
     const showNav = props.showNav??true;
+    const isWhite = props.isWhite??false;
   return (
-    <header style={{background: '#171F33'}}>
+    <header style={{background: isWhite?'#fff':"#171F33"}}>
 
         <div className="container">
             <div className="navbar">
                 <div className="logo">
-                   <Link to="/"><img src="images/Home/dgtglogo1.png" width="84px" height="46px" alt='' /></Link>
+                   <Link to="/"><img src={isWhite?"images/Home/dgtglogo.png":"images/Home/dgtglogo1.png"} width="84px" height="46px" alt='' /></Link>
                 </div>
                 {showNav?
                 <div className={showMediaIcons ? "menu menu-mobile-view" : "menu"}>

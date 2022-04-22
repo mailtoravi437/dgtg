@@ -8,7 +8,7 @@ export default function ContactUs() {
   return (
     <>
     <div className="overlay"></div>
-      <Header showNav={false} />
+      <Header showNav={false} isWhite={true}/>
       <section className='container mt-5'>
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6 mt-md-0 mt-5 order-md-1 order-2">

@@ -828,6 +828,11 @@ b
     background: rgba(172, 32, 39, 1);
 }
 
+footer{
+    position: relative;
+    z-index: 15;
+}
+
 @media (max-width: 500px) {
     .text-sm-center{
         text-align: center !important;
