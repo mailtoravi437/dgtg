@@ -114,7 +114,7 @@ header ul li a:nth-child(8)
     color: #63666F;
 }
 
-.head-nxt p
+.head-nxt button
 {
     margin-top: 35px;
     font-family: 'Montserrat';
@@ -320,7 +320,11 @@ header ul li a:nth-child(8)
     line-height: 39px;
     color: #171F33;
     margin-left: 25px;
-    width: 50%;
+}
+
+.letsgo img{
+    height: 80px;
+    width: 80px;
 }
 
 .contact-us--form{
@@ -808,7 +812,26 @@ b
     display: block;
 }
 
+.homeSlider{
+    height: 100%;
+}
+.homeSlider .swiper-pagination{
+    bottom: 30px;
+    text-align: right;
+}
+
+.homeSlider .swiper-pagination .swiper-pagination-bullet{
+    background: rgba(249, 250, 253, 0.1);
+}
+
+.homeSlider .swiper-pagination .swiper-pagination-bullet-active{
+    background: rgba(172, 32, 39, 1);
+}
+
 @media (max-width: 500px) {
+    .text-sm-center{
+        text-align: center !important;
+    }
     .overlay{
         width: 100vw;
         height: calc(100vh - 100px);
@@ -864,23 +887,36 @@ b
 
     .head h1
     {
+        text-align: center;
         font-size: 40px;
-        line-height: 70px;
+        line-height: 50px;
     }
+
+    /* .section-heading{
+        text-align: center;
+    
+    } */
 
     .head h3
     {
         font-size: 15px;
     }
 
-    .home4
+    /* .home4
     {
         padding: 0 !important;
-    }
+    } */
     .head-nxt
     {
-        display: block;
+        display: flex;
         text-align: center;
+        justify-content: space-around;
+    }
+
+    .head-nxt button{
+        margin: 0px;
+        padding: 16px 2px;
+        width: 45%;
     }
 
     /* .head-img,
@@ -945,6 +981,7 @@ b
     {
         font-size: 24px;
         line-height: 32px;
+        text-align: center;
     }
 
     .service-header h1

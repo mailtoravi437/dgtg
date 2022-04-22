@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom'
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from "swiper";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -40,6 +44,7 @@ export default () => {
       slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+      pagination={true} modules={[Pagination]} className="homeSlider"
     >
       {
         slide.map((ele) => {
