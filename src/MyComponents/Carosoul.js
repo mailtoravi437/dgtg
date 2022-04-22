@@ -4,31 +4,52 @@ import { Link } from 'react-router-dom'
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import Slider from "react-slick";
+// Import Swiper styles
+import 'swiper/css';
 
-export default class Carosoul extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-    return (
-        <Slider {...settings}>
-        <div className="home4 pb-5">
-                    <p>200+ Clients served in last 6 years</p>
+export default () => {
+
+  const slide = [
+    {
+      "image": "images/Home/slide-1.svg",
+      "description": "200+ Clients served in last 6 years"
+    },
+    {
+      "image": "images/Home/slide-2.svg",
+      "description": "In-house performance network & media buying team."
+    },
+    {
+      "image": "images/Home/slide-3.svg",
+      "description": "Best-in-class creative, content, tech and production Folks."
+    },
+    {
+      "image": "images/Home/slide-4.svg",
+      "description": "200+ Clients served in last 6 years"
+    },
+    {
+      "image": "images/Home/slide-5.svg",
+      "description": "200+ Clients served in last 6 years"
+    },
+
+  ]
+  return (
+    <Swiper
+      spaceBetween={50}
+      slidesPerView={1}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      {
+        slide.map((ele) => {
+          return <SwiperSlide><div className="home4 pb-5">
+            <img src={ele.image} alt="" />
+            <p>{ele.description}</p>
           </div>
-          <div className="home4 pb-5">
-                    <p>200+ Clients</p>
-          </div>
-        </Slider>
-    );
-  }
-}
-
-
-
+          </SwiperSlide>
+        })
+      }
+    </Swiper>
+  );
+};

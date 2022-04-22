@@ -8,6 +8,10 @@
     max-width: 100%;
 }
 
+body, html{
+    overflow-x: hidden;
+}
+
 .mt-15
 {
     margin-top: 15vh !important;
@@ -160,17 +164,38 @@ header ul li a:nth-child(8)
 {
     width: 50%;
 }
+.home4{
+    padding: 110px 80px;
+}
 
 .home4 p
 {
-    width: 50%;
+    width: 100%;
     margin-top: 35px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 27px;
-    line-height: 39px;
+    font-size: 35px;
+    line-height: 42px;
     color: #FFFFFF;
+}
+.home4 img{
+    width: 85px;
+    height: 85px;
+}
+
+.background-overflow{
+    position: relative;
+}
+
+.background-overflow::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #171F33;
 }
 
 .head-nxt 

@@ -17,28 +17,28 @@ export default function Header(props) {
                 <div className={showMediaIcons ? "menu menu-mobile-view" : "menu"}>
                     <ul className="menu-list">
                         <li>
-                            <NavLink to="/" ClassName="active">Home</NavLink>
+                            <NavLink to="/" className="active">Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/services" ClassName="active">Services</NavLink>
+                            <NavLink to="/services" className="active">Services</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/team" ClassName="active">Our Team</NavLink>
+                            <NavLink to="/team" className="active">Our Team</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about" ClassName="active">About Us</NavLink>
+                            <NavLink to="/about" className="active">About Us</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/ourwork" ClassName="active">Our Work</NavLink>
+                            <NavLink to="/ourwork" className="active">Our Work</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/career" ClassName="active">Career</NavLink>
+                            <NavLink to="/career" className="active">Career</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/blog" ClassName="active">Blogs</NavLink>
+                            <NavLink to="/blog" className="active">Blogs</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contactus" ClassName="active">Contact Us</NavLink>
+                            <NavLink to="/contactus" className="active">Contact Us</NavLink>
                         </li>
                     </ul>
                 </div>

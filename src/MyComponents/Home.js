@@ -9,7 +9,7 @@ import Carosoul from './Carosoul'
 export default function Home() {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
-    async function getPosts(){
+    async function getPosts() {
       let response = await getLatestBlog();
       setBlogs(response);
     }
@@ -27,8 +27,8 @@ export default function Home() {
                   <h1>Transform your <span style={{ color: '#AC2027' }}> Brand. </span></h1>
                   <h3 className="py-5">We're a digital marketing agency that helps businesses to get found, get talked about, and grow to the next level! </h3>
                   <div className="head-nxt">
-                    <p style={{background: '#AC2027', color: '#FFFFFF'}}>We do it all</p>
-                    <p style={{border: '1px solid'}}>Let’s get started</p>
+                    <p style={{ background: '#AC2027', color: '#FFFFFF' }}>We do it all</p>
+                    <p style={{ border: '1px solid' }}>Let’s get started</p>
                   </div>
                 </div>
               </div>
@@ -40,19 +40,21 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section>
+        </section>
         <section style={{ background: '#F9FAFD' }}>
           <div className="container">
             <div className="home">
               <div className="row">
                 <div className="col-sm-12 col-md-6 col-lg-6">
-                  <div className="home1" style={{padding: '100px 130px 100px 0px'}}>
-                    <h2>Why <br/> <span style={{ color: '#AC2027' }}>Choose</span> us?</h2>
+                  <div className="home1" style={{ padding: '100px 130px 100px 0px' }}>
+                    <h2>Why <br /> <span style={{ color: '#AC2027' }}>Choose</span> us?</h2>
                     <p>Choosing us, you would be choosing the best Digital Marketing Agency in India. We’re a creative agency and technology solutions partner, with over 200+ clients in the last 6 years. </p>
                     <p>We create media buying strategies &amp; campaign management in digital marketing from the concept stage to the actual execution on multiple devices worldwide in the digital sphere. </p>
                   </div>
                 </div>
 
-                <div className="col-sm-12 col-md-6 col-lg-6 p-5" style={{ background: '#171F33' }}>
+                <div className="col-sm-12 col-md-6 col-lg-6  background-overflow" style={{ background: '#171F33' }}>
                   <Carosoul/>
                 </div>
               </div>
@@ -87,7 +89,7 @@ export default function Home() {
               </div>
               <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-end align-items-center">
                 <div className="contactus">
-                <Link to="/contactus" ><h4 style={{background: '#AC2027', color: '#FFFFFF'}}>Contact us</h4></Link>
+                  <Link to="/contactus" ><h4 style={{ background: '#AC2027', color: '#FFFFFF' }}>Contact us</h4></Link>
                 </div>
               </div>
             </div>
@@ -101,21 +103,18 @@ export default function Home() {
               <p>Visit this space to read the latest posts from our team. We‘ll share our reflections on startups, traveling, recent insights on marketing &amp; growth, artificial intelligence (AI), virtual reality (VR), Internet of things (IoT) with some recent topics on COVID &amp; Lockdown. </p>
             </div>
             <div className="row mt-15">
-              {blogs.length > 0?
-              blogs.map((blog) => <BlogCard
-              key={blog.id} 
-              title={blog.attributes.title}
-              thumbnail={blog.attributes.thumbnail.data.attributes.url}
-              slug={blog.attributes.slug} 
-              />)
-              :""}
-              
+              {blogs.length > 0 ?
+                blogs.map((blog) => <BlogCard
+                  key={blog.id}
+                  title={blog.attributes.title}
+                  thumbnail={blog.attributes.thumbnail.data.attributes.url}
+                  slug={blog.attributes.slug}
+                />)
+                : ""}
             </div>
           </div>
         </section>
       </div>
-
-
       <Footer />
     </>
   )
