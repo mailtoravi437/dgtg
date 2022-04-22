@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from "swiper";
+import { Autoplay,Pagination } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -44,11 +44,17 @@ export default () => {
       slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
-      pagination={true} modules={[Pagination]} className="homeSlider"
+      pagination={{
+        clickable: true,
+      }} modules={[Autoplay,Pagination]} className="homeSlider"
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
     >
       {
-        slide.map((ele) => {
-          return <SwiperSlide><div className="home4 pb-5">
+        slide.map((ele, index) => {
+          return <SwiperSlide key={index}><div className="home4 pb-5">
             <img src={ele.image} alt="" />
             <p>{ele.description}</p>
           </div>
