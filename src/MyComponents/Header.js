@@ -39,7 +39,7 @@ export default function Header(props) {
                             <NavLink to="/blog" className="">Blogs</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contactus" className="">Contact Us</NavLink>
+                            <NavLink to="/contactus" className="active">Contact Us</NavLink>
                         </li>
                     </ul>
                 </div>
