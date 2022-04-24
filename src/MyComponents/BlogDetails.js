@@ -2,31 +2,39 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import moment from 'moment';
 import "../Styles/global.css";
-import { getBlog, getCategories, getLatestBlog } from '../Functions/functions';
+import { getBlog, getBlogsByCategory, getCategories, getLatestBlog } from '../Functions/functions';
 import Header from './Header';
 import Footer from './Footer';
+import BlogCard from './BlogCard';
 
 
 export default function BlogDetails() {
     const param = useParams();
     const [blog, setBlog] = useState(null);
+    const [relatedBlogs, setRelatedBlogs] = useState([]);
     const [categories, setCategories] = useState([]);
     const [loaded, setLoaded] = useState(false);
     useEffect(() => {
         async function fetchData() {
             const blog = await getBlog(param.slug);
+            
             const categories = await getCategories();
             if (blog != null) {
                 setBlog(blog);
                 setLoaded(true);
+                const category = blog.attributes.categories.data[0].attributes.name;
+                const relatedBlogs = await getBlogsByCategory(category);
             }
             if (categories != null) {
                 setCategories(categories);
             }
+            if (relatedBlogs != null) {
+                setRelatedBlogs(relatedBlogs);
+            }
         }
         fetchData();
     }, []);
-    console.log(blog);
+
     if (blog != null) {
         const { title, content, publishedAt, thumbnail } = blog.attributes;
         const { url } = thumbnail.data.attributes;
@@ -37,8 +45,8 @@ export default function BlogDetails() {
                     <div className="container mt-5 mb-15">
                         <div className="blogs">
                             <div className="row">
-                                <div className="col-2" />
-                                <div className="col-8">
+                                <div className="col-md-2 col-sm-12 order-md-1 order-3" />
+                                <div className="col-md-8 col-sm-12 order-md-2 order-2">
                                     <div className="blog-img">
                                         <img src={process.env.REACT_APP_API_BASE_URL + url} width="100%" />
                                     </div>
@@ -55,43 +63,23 @@ export default function BlogDetails() {
                                         <h2>Also <span style={{ color: '#AC2027' }}>Read</span></h2>
                                     </div>
                                     <div className="row">
-                                        <div className="col-6">
-                                            <div className="post-img">
-                                                <img src="images/blogs/blog8.png" />
-                                            </div>
-                                            <div className="post-deatails mt-4">
-                                                <p style={{ color: '#171F33' }}>Top 10 Android Apps You Must Download In 2019</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-6">
-                                            <div className="post-img">
-                                                <img src="images/blogs/blog9.png" />
-                                            </div>
-                                            <div className="post-deatails mt-4">
-                                                <p style={{ color: '#171F33' }}>8 Best Practices for Email Marketing in 2019</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col-6">
-                                            <div className="post-img">
-                                                <img src="images/blogs/blog4.png" />
-                                            </div>
-                                            <div className="post-deatails mt-4">
-                                                <p style={{ color: '#171F33' }}>4 Crucial Financial Metrics That Every Startup Must Address</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-6">
-                                            <div className="post-img">
-                                                <img src="images/blogs/blog5.png" />
-                                            </div>
-                                            <div className="post-deatails mt-4">
-                                                <p style={{ color: '#171F33' }}>Top 10 Android Apps You Must Download In 2019</p>
-                                            </div>
-                                        </div>
+                                        {
+                                            relatedBlogs.length > 0 ?
+                                                relatedBlogs.map((blog, index) => {
+                                                    return <div className="col-md-6 col-sm-12">
+                                                        <BlogCard
+                                                            title={blog.attributes.title}
+                                                            thumbnail={blog.attributes.thumbnail.data.attributes.url}
+                                                            slug={blog.attributes.slug}
+                                                        />
+                                                    </div>
+
+                                                }) : "No Related Blogs Found"
+                                        }
+
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-md-2 col-sm-12 order-md-3 order-1">
                                     <div className="search">
                                         <div className="search-box">
                                             <div className="search-txt d-flex justify-content-start align-items-center">
@@ -108,7 +96,7 @@ export default function BlogDetails() {
                                             <li><b style={{ color: '#171F33' }}>Categories</b></li>
                                             {
                                                 categories.length > 0 ?
-                                                    categories.map((category) => <li>
+                                                    categories.map((category, index) => <li key={index}>
                                                         <Link to="/">{category.attributes.name}</Link></li>) :
                                                     ""
                                             }
