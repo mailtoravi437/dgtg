@@ -14,11 +14,11 @@ body, html{
 
 .mt-15
 {
-    margin-top: 15vh !important;
+    margin-top: 60px !important;
 }
 .mb-15
 {
-    margin-bottom: 10vh !important;
+    margin-bottom: 48px !important;
 }
 
 a:link,
@@ -88,6 +88,9 @@ header ul li a:nth-child(8)
     color: #ffffff;
 }
 
+.text-red{
+    color: #AC2027;
+}
 
 
 .py-5 {
@@ -382,9 +385,6 @@ header ul li a:nth-child(8)
 }
 
 .gallery_header h2{
-    position: absolute;
-    width: 408px;
-    height: 98px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
@@ -440,6 +440,7 @@ header ul li a:nth-child(8)
     opacity: 0.6;
     text-decoration: none;
     margin-right: 55px;
+    cursor: pointer;
 }
 
 .our-work ul li.red a
@@ -1065,6 +1066,17 @@ footer{
     .background-overflow::after{
         width: 105vw;
         left: -15px;        
+    }
+    .our-work ul{
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .our-work ul li a{
+        margin-right: 30px;
+    }
+
+    .modal__content{
+        width: 100%;
     }
 
 }

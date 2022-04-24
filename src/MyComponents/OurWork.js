@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
 
 export default function OurWork() {
+  const [category, setCategory] = useState("all");
+
+  const changeCategory = (category) => {
+    setCategory(category);
+  }
   return (
     <>
     <Header/>
@@ -11,14 +16,14 @@ export default function OurWork() {
   <section className="mt-15 mb-15">
     <div className="container-fluid">
       <div className="service-header">
-        <h1>Our Work</h1>
+        <h1>Our <span className='text-red'>Work</span></h1>
       </div>
       <div className="our-work d-flex justify-content-center mt-5">
         <ul>
-          <li className="red"><a href="#">ALL</a></li>
-          <li><a href="#">Creatives</a></li>
-          <li><a href="#">Performance</a></li>
-          <li><a href="#">Branding</a></li>
+          <li className={category =="all"?"red":""} onClick={()=> changeCategory("all")}><a>ALL</a></li>
+          <li className={category =="Creatives"?"red":""} onClick={() => changeCategory("Creatives")}><a>Creatives</a></li>
+          <li className={category =="Performance"?"red":""} onClick={() =>changeCategory("Performance")}><a>Performance</a></li>
+          <li className={category =="Branding"?"red":""} onClick={() => changeCategory("Branding")}><a>Branding</a></li>
         </ul>
       </div>
     </div>        
@@ -51,23 +56,26 @@ export default function OurWork() {
             </div>
           </div>
         </div>
+        {(category=="all" || category=="Creatives")?
         <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#"><img src="images/ourwork/housejoy.png" width="220px" height="112px" /></a>
           </div>
-        </div>
+        </div>:""}
+        {(category=="all" || category=="Performance")?
         <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#"><img src="images/ourwork/reliance.png" width="220px" height="63px" /></a>
           </div>
-        </div>
+        </div>:""}
       </div>
       <div className="row mt-5">
+      {(category=="all" || category=="Branding")?
         <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#"><img src="images/ourwork/swiggy.png" width="220px" height="66px" /></a>
           </div>
-        </div>
+        </div>:""}
         <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="icon">
             <a href="#"><img src="images/ourwork/mahindra.png" width="220px" height="124px" /></a>
