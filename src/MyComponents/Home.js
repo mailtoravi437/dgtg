@@ -25,7 +25,7 @@ export default function Home() {
               <div className="col-sm-12 col-md-6 col-lg-6 order-md-1 order-2">
                 <div className="head">
                   <h1 className='section-heading'>Transform your <span style={{ color: '#AC2027' }}> Brand. </span></h1>
-                  <h3 className="py-5 text-sm-center">We're a digital marketing agency that helps businesses to get found, get talked about, and grow to the next level! </h3>
+                  <h3 className="py-5">We're a digital marketing agency that helps businesses to get found, get talked about, and grow to the next level! </h3>
                   <div className="head-nxt">
                     <button className='btn' style={{ background: '#AC2027', color: '#FFFFFF' }}>We do it all</button>
                     <button className='btn' style={{ border: '1px solid' }}>Let’s get started</button>

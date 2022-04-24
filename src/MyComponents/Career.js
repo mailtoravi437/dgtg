@@ -7,7 +7,7 @@ import Footer from './Footer';
 export default function Career() {
     return (
         <>
-            <Header showNav={false} isWhite={true} />
+            <Header isWhite={true}  showNav={false}/>
             <section>
                 <div className="container mb-15">
                     <div className="row">
@@ -18,10 +18,7 @@ export default function Career() {
                             {/* <i className="fal fa-long-arrow-left" /> */}
                             <div className="career">
                                 <h2>Career</h2>
-                                <p>Join us today!
-                                    <br />
-                                    <br />
-                                    and be a part of India's fastest-growing creative advertising agency. Do you have the skills? We are waiting to hear from you.
+                                <p>Join us today! and be a part of India's fastest-growing creative advertising agency. Do you have the skills? We are waiting to hear from you.
                                 </p>
                             </div>
                             <div className="message">

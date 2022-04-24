@@ -104,7 +104,7 @@ export default function Services() {
         </div>
         <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-end align-items-center">
           <div className="contactus">
-          <Link to="/contactus" ><h4>Contact us<i className="fal fa-long-arrow-right" style={{color: '#AC2027'}} /></h4></Link>
+          <Link to="/contactus" ><h4 style={{ background: '#AC2027', color: '#FFFFFF' }}>Contact us<i className="fal fa-long-arrow-right" style={{color: '#AC2027'}} /></h4></Link>
           </div>
         </div> 
       </div>

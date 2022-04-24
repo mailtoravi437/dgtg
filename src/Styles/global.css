@@ -330,6 +330,7 @@ header ul li a:nth-child(8)
 .contact-us--form{
     width: 90%;
     float: right;
+    padding-left: 10%;
 }
 
 .contactus h4
@@ -409,6 +410,10 @@ header ul li a:nth-child(8)
 /* .mt-15{
     margin-top: 40px !important;
 } */
+
+.order-2{
+    margin: inherit;
+}
 
 .our-work ul
 {
@@ -735,7 +740,7 @@ textarea:focus, input:focus{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
     color: #63666F;
 }
@@ -830,6 +835,7 @@ b
 
 footer{
     position: relative;
+    font-family: 'Montserrat';;
     z-index: 15;
 }
 
