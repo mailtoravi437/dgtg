@@ -1079,8 +1079,15 @@ footer{
         left: -15px;        
     }
     .our-work ul{
-        flex-wrap: wrap;
+        overflow-x: scroll;
         padding: 0px;
+        -ms-overflow-style: none;
+        scrollbar-width: none
+    }
+    .our-work ul::-webkit-scrollbar{
+        display: none;
+        width: 0;
+        height: 0;
     }
     .our-work ul li a{
         margin-right: 30px;
@@ -1088,6 +1095,14 @@ footer{
 
     .modal__content{
         width: 100%;
+    }
+
+    .our-work-icons .col-sm-12{
+        padding: 0px;
+    }
+
+    .our-work-icons .col-sm-12:not(:last-child){
+        margin-bottom: 30px;
     }
 
 }
