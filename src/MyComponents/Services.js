@@ -97,12 +97,12 @@ export default function Services() {
     <div className="container p-5">
       <div className="row">
         <div className="col-sm-12 col-md-6 col-lg-6">
-          <div className="letsgo d-flex">
+          <div className="letsgo d-flex align-items-center">
             <img src="images/services/letsgo.png" height="80vh" width="80vh" />
-            <h2>Let's get started working together.</h2>
+            <h2 >Let's get started working together.</h2>
           </div>
         </div>
-        <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-end align-items-center">
+        <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-md-end justify-content-center align-items-center">
           <div className="contactus">
           <Link to="/contactus" ><h4 style={{ background: '#AC2027', color: '#FFFFFF' }}>Contact us<i className="fal fa-long-arrow-right" style={{color: '#AC2027'}} /></h4></Link>
           </div>

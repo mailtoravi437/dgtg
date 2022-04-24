@@ -146,6 +146,9 @@ header ul li a:nth-child(8)
     align-items: center;
 }
 
+.home-header{
+    margin-top: 20vh;
+}
 
 .home1 p,
 .home6 p,
@@ -276,6 +279,10 @@ header ul li a:nth-child(8)
 .hamberger-menu
 {
     display: none;
+}
+
+.hamberger-menu a{
+    color: #fff;
 }
 
 .box-details h3
@@ -879,17 +886,18 @@ footer{
 
     .menu-mobile-view
     {
-        top: 75px;
-        left: 14px;
-        padding-left: 14px;
+        top: 70px;
+        left: -14px;
         display: block;
-        position: absolute;
+        position: fixed;
         padding: 50px 0px;
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
         background: #ffffff;
         transition: 0.5s;
         z-index: 999;
         border-top: 1px solid rgba(0,0,0,0.2);
+        padding-left: 24px;
     }
 
     header ul li
@@ -937,7 +945,9 @@ footer{
         padding: 16px 2px;
         width: 45%;
     }
-
+    .home-header{
+        margin-top: 35px;
+    }
     /* .head-img,
     .home2 p, .home3 p, .home6 p, .latest-post p, .post-deatails p
     {

@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <Header />
       <div>
-        <section style={{ marginTop: '20vh' }}>
+        <section className='home-header'>
           <div className="container mb-15">
             <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-6 order-md-1 order-2">
