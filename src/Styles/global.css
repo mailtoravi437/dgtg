@@ -647,13 +647,17 @@ textarea:focus, input:focus{
 
 .search-list ul
 {
+    padding: 0px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .search-list ul li
 {
-    margin: 20px 15px;
+    margin: 5px 15px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -840,6 +844,9 @@ footer{
 }
 
 @media (max-width: 500px) {
+    .row{
+        margin-left: 0px ;
+    }
     .text-sm-center{
         text-align: center !important;
     }
@@ -873,7 +880,8 @@ footer{
     .menu-mobile-view
     {
         top: 75px;
-        /* left: 120%; */
+        left: 14px;
+        padding-left: 14px;
         display: block;
         position: absolute;
         padding: 50px 0px;
@@ -1035,6 +1043,18 @@ footer{
     .search-txt input
     {
         width: 19rem;
+    }
+
+    .mb-15{
+        margin-bottom: 35px !important;
+    }
+    .mt-15{
+        margin-top: 35px !important;
+    }
+
+    .background-overflow::after{
+        width: 105vw;
+        left: -15px;        
     }
 
 }
