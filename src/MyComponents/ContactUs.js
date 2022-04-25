@@ -8,7 +8,7 @@ export default function ContactUs() {
   return (
     <>
     <div className="overlay"></div>
-      <Header showNav={false} />
+      <Header showNav={false} isWhite={true}/>
       <section className='container mt-5'>
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6 mt-md-0 mt-5 order-md-1 order-2">
@@ -16,22 +16,22 @@ export default function ContactUs() {
                 <img src="images/career/banglore.png" />
                 <div className="place-details">
                   <h5>Banglore</h5>
-                  <p>Building 167, 6th cross, Whitefield, Bangalore, Karnataka, India-560066</p>
-                  <p>Building No: 54, The Planet, First Floor.Above First Cry, Brooke Bond First Cross,whitefield Main Road, Whitefield, Bangalore, Karnataka,India - 560066</p>
+                  <p>Building 167, 6th cross, Whitefield,<br/> Bangalore, Karnataka, India-560066</p>
+                  <p>Building No: 54, The Planet, First Floor.<br/>Above First Cry, Brooke Bond First Cross,<br/>whitefield Main Road, Whitefield,<br/> Bangalore, Karnataka,India - 560066</p>
                 </div>
               </div>
               <div className="place mt-5 d-flex">
                 <img src="images/career/delhi.png" />
                 <div className="place-details">
                   <h5>Delhi &amp; NCR</h5>
-                  <p>721,1st Floor Udyog Vihar Phase V,Sector 19, Gurugram, Haryana 122008</p>
+                  <p>721,1st Floor Udyog Vihar Phase V,<br/>Sector 19, Gurugram, Haryana 122008</p>
                 </div>
               </div>
               <div className="place mt-5 d-flex">
                 <img src="images/career/mumbai.png" />
                 <div className="place-details">
                   <h5>Mumbai</h5>
-                  <p>WeWork, Spectrum towers, 5th floor,307, Chincholi Bunder Rd, Rajan Pada, Mindspace, Malad West, Mumbai, Maharashtra 400064</p>
+                  <p>WeWork, Spectrum towers, 5th floor,<br/>307, Chincholi Bunder Rd, Rajan Pada, <br/>Mindspace, Malad West, Mumbai,<br/> Maharashtra 400064</p>
                 </div>
               </div>
               <div className="contact-details d-md-flex d-none justify-content-evenly mt-5 mb-15">

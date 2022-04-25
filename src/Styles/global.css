@@ -8,13 +8,17 @@
     max-width: 100%;
 }
 
+body, html{
+    overflow-x: hidden;
+}
+
 .mt-15
 {
-    margin-top: 15vh !important;
+    margin-top: 60px !important;
 }
 .mb-15
 {
-    margin-bottom: 15vh !important;
+    margin-bottom: 48px !important;
 }
 
 a:link,
@@ -32,7 +36,23 @@ a:visited
 .navbar
 {
     padding-top: 15px;
-    padding-bottom: 0 !important;
+    padding-bottom: 10px !important;
+}
+
+.menu-list li a:active{
+    color: #ffffff !important;
+}
+
+.menu-list li a:focus{
+    color: #ffffff !important;
+
+
+}
+
+.menu-list li a:hover{
+    color: #ffffff !important;
+
+
 }
 
 
@@ -68,6 +88,15 @@ header ul li a:nth-child(8)
     color: #ffffff;
 }
 
+.text-red{
+    color: #AC2027;
+}
+
+
+.py-5 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
 .head h1
 {
     font-family: 'Montserrat';
@@ -88,7 +117,7 @@ header ul li a:nth-child(8)
     color: #63666F;
 }
 
-.head-nxt p
+.head-nxt button
 {
     margin-top: 35px;
     font-family: 'Montserrat';
@@ -120,6 +149,9 @@ header ul li a:nth-child(8)
     align-items: center;
 }
 
+.home-header{
+    margin-top: 20vh;
+}
 
 .home1 p,
 .home6 p,
@@ -129,7 +161,7 @@ header ul li a:nth-child(8)
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 150%;
     color: #63666F;
 }
@@ -138,17 +170,38 @@ header ul li a:nth-child(8)
 {
     width: 50%;
 }
+.home4{
+    padding: 110px 80px;
+}
 
 .home4 p
 {
-    width: 50%;
+    width: 100%;
     margin-top: 35px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 27px;
-    line-height: 39px;
+    font-size: 35px;
+    line-height: 42px;
     color: #FFFFFF;
+}
+.home4 img{
+    width: 85px;
+    height: 85px;
+}
+
+.background-overflow{
+    position: relative;
+}
+
+.background-overflow::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #171F33;
 }
 
 .head-nxt 
@@ -156,10 +209,24 @@ header ul li a:nth-child(8)
     display: flex;
 }
 
-footer{
+.footer{
     position: relative;
     z-index: 15;
 }
+
+.foot{
+    padding-top: 5%;
+}
+
+
+
+.footer-details ul li a {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.4);
+    padding-left: 0;
+    font-size: 17px;
+}
+
 
 .footer-heading h2
 {
@@ -176,7 +243,7 @@ footer{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 23px;
     line-height: 150%;
     color: #FFFFFF;
 }
@@ -186,7 +253,7 @@ footer{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 150%;
     color: rgba(255, 255, 255, 0.4);
 }
@@ -217,6 +284,10 @@ footer{
     display: none;
 }
 
+.hamberger-menu a{
+    color: #fff;
+}
+
 .box-details h3
 {
     font-family: 'Montserrat';
@@ -239,9 +310,16 @@ footer{
 
 .box
 {
-    height: 300px;
+    height: 60vh;
     width: 100%;
     border: 1px solid #63666F33;
+}
+
+
+
+.letsgo{
+    padding-bottom: 10%;
+    padding-top: 10%;
 }
 
 .letsgo h2{
@@ -254,9 +332,15 @@ footer{
     margin-left: 25px;
 }
 
+.letsgo img{
+    height: 80px;
+    width: 80px;
+}
+
 .contact-us--form{
     width: 90%;
     float: right;
+    padding-left: 10%;
 }
 
 .contactus h4
@@ -301,9 +385,6 @@ footer{
 }
 
 .gallery_header h2{
-    position: absolute;
-    width: 408px;
-    height: 98px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
@@ -328,9 +409,17 @@ footer{
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 32px;
+    line-height: 8px;
     color: #63666F;
     opacity: 0.6;
+}
+
+/* .mt-15{
+    margin-top: 40px !important;
+} */
+
+.order-2{
+    margin: inherit;
 }
 
 .our-work ul
@@ -351,6 +440,7 @@ footer{
     opacity: 0.6;
     text-decoration: none;
     margin-right: 55px;
+    cursor: pointer;
 }
 
 .our-work ul li.red a
@@ -465,7 +555,7 @@ footer{
 {
     float: right;
     padding: 16px 48px;
-    width: 138px;
+    width: 100%;
     height: 52px;
     background: #AC2027;
     font-family: 'Montserrat';
@@ -565,13 +655,17 @@ textarea:focus, input:focus{
 
 .search-list ul
 {
+    padding: 0px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .search-list ul li
 {
-    margin: 20px 15px;
+    margin: 5px 15px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -639,6 +733,10 @@ textarea:focus, input:focus{
     height: 100%;
 }
 
+.career{
+    padding-top: 30px;
+}
+
 .career h2
 {
     font-family: 'Montserrat';
@@ -654,7 +752,7 @@ textarea:focus, input:focus{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
     color: #63666F;
 }
@@ -675,10 +773,16 @@ textarea:focus, input:focus{
 .upper-right p{
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 700 !important;
     line-height: 150%;
     color: #63666E;
+}
+
+
+
+.upper-right{
+    font-weight: 400;
+    font-size: 20px;
 }
 
 b
@@ -725,7 +829,48 @@ b
     display: block;
 }
 
+.homeSlider{
+    height: 100%;
+}
+.homeSlider .swiper-pagination{
+    bottom: 30px;
+    text-align: right;
+}
+
+.homeSlider .swiper-pagination .swiper-pagination-bullet{
+    background: rgba(249, 250, 253, 0.1);
+}
+
+.homeSlider .swiper-pagination .swiper-pagination-bullet-active{
+    background: rgba(172, 32, 39, 1);
+}
+
+footer{
+    position: relative;
+    font-family: 'Montserrat';;
+    z-index: 15;
+}
+
+@media (max-width: 500px){
+.letsgo h2 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 20px;
+}
+}
+
 @media (max-width: 500px) {
+    .row{
+        margin-left: 0px ;
+    }
+
+    .mt-15{
+        margin-top: 70px !important;
+    }
+    .text-sm-center{
+        text-align: center !important;
+    }
     .overlay{
         width: 100vw;
         height: calc(100vh - 100px);
@@ -755,16 +900,18 @@ b
 
     .menu-mobile-view
     {
-        top: 75px;
-        /* left: 120%; */
+        top: 70px;
+        left: -14px;
         display: block;
-        position: absolute;
+        position: fixed;
         padding: 50px 0px;
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
         background: #ffffff;
         transition: 0.5s;
         z-index: 999;
         border-top: 1px solid rgba(0,0,0,0.2);
+        padding-left: 24px;
     }
 
     header ul li
@@ -781,25 +928,40 @@ b
 
     .head h1
     {
+        text-align: center;
         font-size: 40px;
-        line-height: 70px;
+        line-height: 50px;
     }
+
+    /* .section-heading{
+        text-align: center;
+    
+    } */
 
     .head h3
     {
         font-size: 15px;
     }
 
-    .home4
+    /* .home4
     {
         padding: 0 !important;
-    }
+    } */
     .head-nxt
     {
-        display: block;
+        display: flex;
         text-align: center;
+        justify-content: space-around;
     }
 
+    .head-nxt button{
+        margin: 0px;
+        padding: 16px 2px;
+        width: 45%;
+    }
+    .home-header{
+        margin-top: 35px;
+    }
     /* .head-img,
     .home2 p, .home3 p, .home6 p, .latest-post p, .post-deatails p
     {
@@ -816,6 +978,7 @@ b
         font-size: 27px;
         line-height: 39px;
     }
+
 
     .home4
     {
@@ -861,6 +1024,13 @@ b
     {
         font-size: 24px;
         line-height: 32px;
+        text-align: center;
+    }
+
+    .box
+    {
+        margin-bottom: 60px;
+        height: 50vh;
     }
 
     .service-header h1
@@ -893,6 +1063,7 @@ b
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 0 !important;
     }
 
     .message input
@@ -903,6 +1074,51 @@ b
     .search-txt input
     {
         width: 19rem;
+    }
+
+    .mb-15{
+        margin-bottom: 35px !important;
+    }
+    .mt-15{
+        margin-top: 35px !important;
+    }
+
+    .background-overflow::after{
+        width: 105vw;
+        left: -15px;        
+    }
+    .our-work ul{
+        overflow-x: scroll;
+        padding: 0px;
+        -ms-overflow-style: none;
+        scrollbar-width: none
+    }
+    .our-work ul::-webkit-scrollbar{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .our-work ul li a{
+        margin-right: 30px;
+    }
+
+    .modal__content{
+        width: 100%;
+    }
+
+    .our-work-icons .col-sm-12{
+        padding: 0px;
+    }
+
+    .our-work-icons .col-sm-12:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    .contact-us--form
+    {
+        float: none;
+        width: 100%;
+        padding-left: 0;
     }
 
 }

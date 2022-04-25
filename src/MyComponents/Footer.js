@@ -1,13 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { FaWhatsapp } from "react-icons/gi";
+import { Link } from 'react-router-dom'
+//  import { FaWhatsapp } from "react-icons/gi";
 
 export default function Footer() {
   return (
-    <>
+
       <footer style={{ background: '#171F33' }}>
         <div className="container p-md-5 p-lg-5 p-4">
-          <div className="row">
+          <div className="row foot">
             <div className="col-sm-12 col-md-6 col-lg-3 order-2 order-md-1">
               <div className="footer-heading">
                 <h2 className='text-md-start text-lg-start text-center'>DGTG</h2>
@@ -24,10 +25,10 @@ export default function Footer() {
               </div>
               <div className="footer-details">
                 <ul style={{ paddingLeft: 0 }}>
-                  <li><a>About</a></li>
-                  <li><a>Services</a></li>
-                  <li><a>Our Team</a></li>
-                  <li><a>Work</a></li>
+                  <li><Link to="/about">About</Link></li>
+                  <li><Link to="/services">Services</Link></li>
+                  <li><Link to="/team">Our Team</Link></li>
+                  <li><Link to="/ourwork">Work</Link></li>
                 </ul>
               </div>
             </div>
@@ -60,8 +61,5 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-
-
-    </>
   )
 }

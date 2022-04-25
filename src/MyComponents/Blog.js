@@ -5,6 +5,7 @@ import "../Styles/global.css";
 import BlogCard from './BlogCard';
 import Header from './Header';
 import Footer from './Footer';
+import BlogCarousel from './BlogCarousel';
 
 
 export default function Blog() {
@@ -82,14 +83,13 @@ export default function Blog() {
                 </div>
             </section>
             <section>
-                <div className="container mt-15 mb-15">
-                    <div className="row mt-15">
-                        { }
-                        {loaded ? blogs.map(blog => <BlogCard 
+                <div className="container mb-15">
+                    <div className="row">
+                        {loaded ? blogs.map(blog => <div className="col-sm-12 col-md-4"><BlogCard 
                             title={blog.attributes.title}
                             thumbnail={blog.attributes.thumbnail.data.attributes.url}
                             slug={blog.attributes.slug} 
-                            />) : 'not loaded'}
+                            /></div>) : 'not loaded'}
                     </div>
                 </div>
             </section>
