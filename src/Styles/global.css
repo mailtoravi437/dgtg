@@ -864,6 +864,10 @@ footer{
     .row{
         margin-left: 0px ;
     }
+
+    .mt-15{
+        margin-top: 70px !important;
+    }
     .text-sm-center{
         text-align: center !important;
     }
