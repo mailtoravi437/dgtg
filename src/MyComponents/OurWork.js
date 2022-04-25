@@ -28,7 +28,7 @@ export default function OurWork() {
       </div>
     </div>        
   </section>
-  <section>
+  <section className='our-work-icons'>
     <div className="container mb-15">
       <div className="row">
         <div className="col-sm-12 col-md-4 col-lg-4">
