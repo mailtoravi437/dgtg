@@ -873,7 +873,7 @@ footer{
     }
     .overlay{
         width: 100vw;
-        height: calc(100vh - 100px);
+        height: 650px;
         background-color: rgb(23, 31, 51);
         position: absolute;
         top: 80px;
