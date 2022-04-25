@@ -43,7 +43,7 @@ export default function ContactUs() {
                 </div>
               </div>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-6 order-md-2 order-1" style={{ zIndex: 15}}>
+            <div className="col-sm-12 col-md-6 col-lg-6 order-md-2 order-1" style={{ zIndex: 15, height: '650px'}}>
               <form action="" className='contact-us--form'>
                 <i className="fal fa-long-arrow-left" style={{ color: '#ffffff' }} />
                 <div className="career">
