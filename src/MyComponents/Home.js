@@ -54,7 +54,7 @@ export default function Home() {
                 <div className="col-sm-12 col-md-6 col-lg-6 p-5" style={{ background: '#171F33' }}>
                   <div className="home4 pb-5">
                     <img src="images/Home/client.png" height="48px" width="48px" />
-                    <p>200+ Clients served in last 6 years</p>
+                    <p>200 Clients served in last 6 years</p>
                   </div>
                 </div>
               </div>
