@@ -43,7 +43,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row mt-15">
         <div className="col-sm-12 col-md-6 col-lg-6">
           <div className="box p-5 mt-15">
             <div className="box-icon">
@@ -67,7 +67,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row mt-15">
         <div className="col-sm-12 col-md-6 col-lg-6">
           <div className="box p-5 mt-15">
             <div className="box-icon">

@@ -310,7 +310,7 @@ header ul li a:nth-child(8)
 
 .box
 {
-    height: 60vh;
+    height: auto;
     width: 100%;
     border: 1px solid #63666F33;
 }
