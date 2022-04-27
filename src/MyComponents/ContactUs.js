@@ -9,7 +9,7 @@ export default function ContactUs() {
     <>
     <div className="overlay"></div>
       <Header showNav={false} isWhite={true}/>
-      <section className='container mt-5'>
+      <section className='container mt-3'>
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6 mt-md-0 mt-5 order-md-1 order-2">
               <div className="place d-flex">
@@ -34,11 +34,11 @@ export default function ContactUs() {
                   <p>WeWork, Spectrum towers, 5th floor,<br/>307, Chincholi Bunder Rd, Rajan Pada, <br/>Mindspace, Malad West, Mumbai,<br/> Maharashtra 400064</p>
                 </div>
               </div>
-              <div className="contact-details d-md-flex d-none justify-content-evenly mt-5 mb-15">
-                <div className="tel d-flex">
+              <div className="contact-details d-md-flex d-none mt-5 mb-15">
+                <div className="tel d-flex justify-content-center align-items-baseline" style={{paddingRight: '80px'}}>
                   <i className="fas fa-phone-alt" /><p>+91 76763 69557</p>
                 </div>
-                <div className="email d-flex">
+                <div className="email d-flex justify-content-center align-items-baseline">
                   <i className="fas fa-envelope" /><p>contact@dgtg.in</p>
                 </div>
               </div>
@@ -50,12 +50,12 @@ export default function ContactUs() {
                   <h2 style={{ color: '#ffffff' }}>Contact us</h2>
                 </div>
                 <div className="message">
-                  <div className="message-details mt-5 mb-4">
+                  <div className="message-details mt-3 mb-4">
                     <input type="text" placeholder="Name" />
                     <input type="email" placeholder="Email" />
                   </div>
                   <div className="message-text">
-                    <input type="text" placeholder="Subject" className="mb-4" />
+                    <input type="text" placeholder="Subject" className="mb-4" style={{width: '100%'}}/>
                     <textarea placeholder="Message" defaultValue={""} />
                   </div>
                 </div>

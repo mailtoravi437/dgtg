@@ -529,12 +529,12 @@ header ul li a:nth-child(8)
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .message input
 {
-    width: 100%;
+    width: 13rem;
     height: 56px;
     border: 1px solid rgba(99, 102, 111, 0.2);
     box-sizing: border-box;
@@ -734,7 +734,7 @@ textarea:focus, input:focus{
 }
 
 .career{
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 .career h2
@@ -1069,6 +1069,7 @@ footer{
     .message input
     {
         margin-top: 20px;
+        width: 100%;
     }
 
     .search-txt input
