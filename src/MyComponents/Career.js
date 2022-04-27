@@ -22,12 +22,12 @@ export default function Career() {
                                 </p>
                             </div>
                             <div className="message">
-                                <div className="message-details mt-5 mb-4">
+                                <div className="message-details message-details1 mt-5 mb-4">
                                     <input type="text" placeholder="Name" />
                                     <input type="email" placeholder="Email" />
                                 </div>
                                 <div className="message-text">
-                                    <input type="text" placeholder="Subject" className="mb-4" />
+                                    <input type="text" placeholder="Subject" className="mb-4" style={{width: '100%'}}/>
                                     <textarea placeholder="Message" defaultValue={""} />
                                 </div>
                                 <div className="send mt-3">

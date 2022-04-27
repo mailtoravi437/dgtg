@@ -532,6 +532,11 @@ header ul li a:nth-child(8)
     justify-content: space-between;
 }
 
+.message-details1 input
+{
+    width: 16rem !important;
+}
+
 .message input
 {
     width: 13rem;
@@ -1064,6 +1069,11 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         margin-top: 0 !important;
+    }
+
+    .message-details1 input
+    {
+        width: 100% !important;
     }
 
     .message input
