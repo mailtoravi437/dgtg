@@ -907,6 +907,7 @@ footer{
     .menu-mobile-view
     {
         top: 72px;
+        left: 0;
         display: block;
         position: fixed;
         padding: 50px 0px;
@@ -915,6 +916,7 @@ footer{
         background: #ffffff;
         transition: 0.5s;
         z-index: 999;
+        padding-left: 15px;
     }
 
     .menu-mobile-view1
@@ -929,6 +931,7 @@ footer{
         background: #ffffff;
         transition: 0.5s;
         z-index: 999;
+        padding-left: 15px;
     }
 
     header ul li
