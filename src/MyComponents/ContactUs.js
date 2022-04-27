@@ -2,13 +2,14 @@ import React from 'react'
 import Header from './Header';
 import "../Styles/global.css";
 import Footer from './Footer';
+import { Link } from 'react-router-dom'
 
 
 export default function ContactUs() {
   return (
     <>
     <div className="overlay"></div>
-      <Header showNav={false} isWhite={true}/>
+      <Header showNav={false} isWhite={true} showNav1={true}/>
       <section className='container mt-3'>
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6 mt-md-0 mt-5 order-md-1 order-2">
@@ -45,7 +46,7 @@ export default function ContactUs() {
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 order-md-2 order-1" style={{ zIndex: 15, height: '650px'}}>
               <form action="" className='contact-us--form'>
-                <i className="fal fa-long-arrow-left" style={{ color: '#ffffff' }} />
+                <Link to="/"><i className="fal fa-long-arrow-left" style={{ color: '#ffffff' }} /></Link>
                 <div className="career">
                   <h2 style={{ color: '#ffffff' }}>Contact us</h2>
                 </div>

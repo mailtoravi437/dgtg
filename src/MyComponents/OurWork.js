@@ -11,7 +11,7 @@ export default function OurWork() {
   }
   return (
     <>
-    <Header/>
+    <Header showNav1={false}/>
   <div>
   <section className="mt-15 mb-15">
     <div className="container-fluid">

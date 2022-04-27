@@ -8,7 +8,7 @@ import Footer from './Footer';
 export default function Aboutus() {
   return (
     <>
-      <Header showNav={true} />
+      <Header showNav={true} showNav1={false}/>
       <section className="mt-15 mb-15">
         <div className="container">
           <div id="features">

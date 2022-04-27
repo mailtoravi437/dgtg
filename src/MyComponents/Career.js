@@ -7,7 +7,7 @@ import Footer from './Footer';
 export default function Career() {
     return (
         <>
-            <Header isWhite={true}  showNav={false} showHam={true} />
+            <Header isWhite={true}  showNav={false} showNav1={true} />
             <section>
                 <div className="container mb-15">
                     <div className="row">

@@ -18,7 +18,7 @@ export default function Home() {
   }, [])
   return (
     <>
-      <Header />
+      <Header showNav1={false} />
       <div>
         <section className='home-header'>
           <div className="container mb-15">

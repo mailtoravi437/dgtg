@@ -53,7 +53,7 @@ export default function Blog() {
     }
     return (
         <>
-            <Header />
+            <Header showNav1={false}/>
             <section className="mt-15 mb-15">
                 <div className="container">
                     <div className="service-header">
