@@ -23,12 +23,12 @@ export default function Career() {
                             </div>
                             <div className="message">
                                 <div className="message-details message-details1 mt-5 mb-4">
-                                    <input type="text" placeholder="Name" />
-                                    <input type="email" placeholder="Email" />
+                                    <input type="text" placeholder="Name" style={{border: '1px solid rgba(99, 102, 111, 0.2)', color: 'rgba(99, 102, 111, 0.6)'}}/>
+                                    <input type="email" placeholder="Email" style={{border: '1px solid rgba(99, 102, 111, 0.2)', color: 'rgba(99, 102, 111, 0.6)'}}/>
                                 </div>
                                 <div className="message-text">
-                                    <input type="text" placeholder="Subject" className="mb-4" style={{width: '100%'}}/>
-                                    <textarea placeholder="Message" defaultValue={""} />
+                                    <input type="text" placeholder="Subject" className="mb-4" style={{width: '100%', border: '1px solid rgba(99, 102, 111, 0.2)', color: 'rgba(99, 102, 111, 0.6)'}}/>
+                                    <textarea placeholder="Message" defaultValue={""} style={{border: '1px solid rgba(99, 102, 111, 0.2)', color: 'rgba(99, 102, 111, 0.6)'}} />
                                 </div>
                                 <div className="send mt-3">
                                     Send
