@@ -35,7 +35,7 @@ export default function ContactUs() {
                   <p>WeWork, Spectrum towers, 5th floor,<br/>307, Chincholi Bunder Rd, Rajan Pada, <br/>Mindspace, Malad West, Mumbai,<br/> Maharashtra 400064</p>
                 </div>
               </div>
-              <div className="contact-details d-md-flex d-none mt-5 mb-15">
+              <div className="contact-details d-md-flex d-none mt-5 mb-15" style={{paddingLeft: '25px'}}>
                 <div className="tel d-flex justify-content-center align-items-baseline" style={{paddingRight: '80px'}}>
                   <i className="fas fa-phone-alt" /><p>+91 76763 69557</p>
                 </div>
@@ -52,8 +52,12 @@ export default function ContactUs() {
                 </div>
                 <div className="message">
                   <div className="message-details mt-3 mb-4">
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
+                    <div className="message-details_name">
+                        <input type="text" placeholder="Name" />
+                    </div>
+                    <div className="message-details_email">
+                        <input type="email" placeholder="Email" />
+                    </div>
                   </div>
                   <div className="message-text">
                     <input type="text" placeholder="Subject" className="mb-4" style={{width: '100%'}}/>

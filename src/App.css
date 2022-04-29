@@ -226,13 +226,6 @@ color: #171F33;
     visibility: visible;
 }
 
-.message-details
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 .message input
 {
     width: 100%;

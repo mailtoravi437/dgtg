@@ -526,19 +526,13 @@ header ul li a:nth-child(8)
     justify-content: space-between;
 }
 
-.message-details1 input
-{
-    width: 16rem !important;
-}
-
 .message input
 {
-    width: 13rem;
+    width: 100%;
     height: 56px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: none;
     box-sizing: border-box;
-    padding-left: 25px;
     color: rgba(255, 255, 255, 0.6);
 } 
 
