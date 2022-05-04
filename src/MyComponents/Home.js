@@ -21,7 +21,7 @@ export default function Home() {
       <Header showNav1={false} />
       <div>
         <section className='home-header'>
-          <div className="container mb-15">
+          <div className="container">
             <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-6 order-md-1 order-2">
                 <div className="head">

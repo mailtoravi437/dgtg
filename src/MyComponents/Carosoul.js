@@ -30,11 +30,11 @@ export default () => {
     },
     {
       "image": "images/Home/slide-4.svg",
-      "description": "200+ Clients served in last 6 years"
+      "description": "Industry experience – eCom, Healthcare, BFSI, Real esate & gaming."
     },
     {
       "image": "images/Home/slide-5.svg",
-      "description": "200+ Clients served in last 6 years"
+      "description": "Speed in execution and wider reach."
     },
 
   ]
