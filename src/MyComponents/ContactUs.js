@@ -15,7 +15,7 @@ export default function ContactUs() {
           <div className="col-sm-12 col-md-6 col-lg-6 mt-md-0 mt-5 order-md-1 order-2">
             <div className="place d-flex">
               <img src="images/career/banglore.png" />
-              <div className="place-details">
+              <div className="place-details mt-2">
                 <h5>Banglore</h5>
                 <p>Building 167, 6th cross, Whitefield,<br /> Bangalore, Karnataka, India-560066</p>
                 <p>Building No: 54, The Planet, First Floor.<br />Above First Cry, Brooke Bond First Cross,<br />whitefield Main Road, Whitefield,<br /> Bangalore, Karnataka,India - 560066</p>
@@ -23,14 +23,14 @@ export default function ContactUs() {
             </div>
             <div className="place mt-5 d-flex">
               <img src="images/career/delhi.png" />
-              <div className="place-details">
+              <div className="place-details mt-2">
                 <h5>Delhi &amp; NCR</h5>
                 <p>721,1st Floor Udyog Vihar Phase V,<br />Sector 19, Gurugram, Haryana 122008</p>
               </div>
             </div>
             <div className="place mt-5 d-flex">
               <img src="images/career/mumbai.png" />
-              <div className="place-details">
+              <div className="place-details mt-2">
                 <h5>Mumbai</h5>
                 <p>WeWork, Spectrum towers, 5th floor,<br />307, Chincholi Bunder Rd, Rajan Pada, <br />Mindspace, Malad West, Mumbai,<br /> Maharashtra 400064</p>
               </div>

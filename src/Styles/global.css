@@ -145,7 +145,7 @@ header ul li a:nth-child(8)
 
 .home-header{
     margin-top: 12vh;
-    margin-bottom: 18vh;
+    margin-bottom: 22vh;
 }
 
 .home1 p,
@@ -854,6 +854,11 @@ footer{
     display: none;
 } 
 
+.our-team-list
+{
+    margin-top: 35px;
+    margin-bottom: 150px;
+}
 
 @media (max-width: 500px){
     .letsgo h2 

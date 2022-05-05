@@ -10,11 +10,11 @@ export default function Aboutus() {
     <>
       <Header showNav={true} showNav1={false}/>
       <section className="mt-15 mb-15">
-        <div className="container">
+        <div className="container" style={{marginBottom: "135px"}}>
           <div id="features">
             <div className="upper row">
               <div className="upper-left col-sm-12 col-md-6 col-lg-6 mb-5">
-                <h1>Our<span style={{ color: '#AC2027' }}> Story </span></h1>
+                <h1>Our <br/> <span style={{ color: '#AC2027' }}> Story </span></h1>
               </div>
               <div className="upper-right col-sm-12 col-md-6 col-lg-6">
                 <b style={{ color: '#171F33' }}>Here's a headline we can never forget even if we wanted to: People who work together, succeed.</b>
